@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IELTS Grammar Master - Tense Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --present: #27ae60;
+            --past: #8e44ad;
+            --future: #0984e3;
+            --bg: #f5f6fa;
+            --text: #2d3436;
+        }
+
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); padding: 40px; margin: 0; }
+        .dashboard { max-width: 1200px; margin: 0 auto; }
+
+        /* Header */
+        .header { text-align: center; margin-bottom: 50px; }
+        .header h1 { font-size: 3.5rem; font-weight: 900; margin: 0; color: #2d3436; letter-spacing: -1px; }
+        .header p { font-size: 1.2rem; color: #636e72; margin-top: 10px; }
+        .badge-main { display: inline-block; background: #2d3436; color: white; padding: 8px 20px; border-radius: 50px; font-weight: bold; margin-bottom: 15px; letter-spacing: 1px; }
+
+        /* Grid System */
+        .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+
+        /* Category Columns */
+        .category-column { background: white; border-radius: 25px; padding: 30px; box-shadow: 0 15px 35px rgba(0,0,0,0.05); border-top: 8px solid; }
+        .cat-present { border-color: var(--present); }
+        .cat-past { border-color: var(--past); }
+        .cat-future { border-color: var(--future); }
+
+        .category-title { font-size: 1.8rem; font-weight: 900; margin-top: 0; display: flex; align-items: center; gap: 10px; }
+        .cat-present .category-title { color: var(--present); }
+        .cat-past .category-title { color: var(--past); }
+        .cat-future .category-title { color: var(--future); }
+
+        /* Menu Links */
+        .menu-item { display: block; text-decoration: none; background: #fdfdfd; border: 2px solid #f1f2f6; padding: 20px; border-radius: 15px; margin-bottom: 15px; transition: all 0.3s ease; position: relative; overflow: hidden; }
+        .menu-item:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.08); }
+        
+        .cat-present .menu-item:hover { border-color: var(--present); }
+        .cat-past .menu-item:hover { border-color: var(--past); }
+        .cat-future .menu-item:hover { border-color: var(--future); }
+
+        .menu-item h3 { margin: 0 0 5px 0; font-size: 1.1rem; color: #2d3436; }
+        .menu-item p { margin: 0; font-size: 0.85rem; color: #7f8c8d; }
+
+        /* Arrow Icon */
+        .menu-item::after { content: '→'; position: absolute; right: 20px; top: 50%; transform: translateY(-50%); font-size: 1.5rem; color: #b2bec3; transition: 0.3s; }
+        .cat-present .menu-item:hover::after { color: var(--present); right: 15px; }
+        .cat-past .menu-item:hover::after { color: var(--past); right: 15px; }
+        .cat-future .menu-item:hover::after { color: var(--future); right: 15px; }
+    </style>
+</head>
+<body>
+
+<div class="dashboard">
+    <div class="header">
+        <span class="badge-main">IELTS BAND 8.0+</span>
+        <h1>Grammar Master</h1>
+        <p>The Ultimate 12 Tenses Dashboard for Writing & Speaking</p>
+    </div>
+
+    <div class="grid-container">
+        
+        <div class="category-column cat-present">
+            <h2 class="category-title">🟢 Present</h2>
+            
+            <a href="present.html" class="menu-item">
+                <h3>Simple Present</h3>
+                <p>Facts, habits, and process diagrams</p>
+            </a>
+            <a href="present-continuous.html" class="menu-item">
+                <h3>Present Continuous</h3>
+                <p>Ongoing trends and temporary states</p>
+            </a>
+            <a href="present-perfect.html" class="menu-item">
+                <h3>Present Perfect</h3>
+                <p>The bridge between past and now</p>
+            </a>
+            <a href="present-perfect-progressive.html" class="menu-item">
+                <h3>Present Perfect Continuous</h3>
+                <p>Duration and persistent actions</p>
+            </a>
+        </div>
+
+        <div class="category-column cat-past">
+            <h2 class="category-title">🟣 Past</h2>
+            
+            <a href="simple-past.html" class="menu-item">
+                <h3>Simple Past</h3>
+                <p>Finished events and historical data</p>
+            </a>
+            <a href="past-continuos.html" class="menu-item">
+                <h3>Past Continuous</h3>
+                <p>Background context and interrupted actions</p>
+            </a>
+            <a href="past-perfect.html" class="menu-item">
+                <h3>Past Perfect</h3>
+                <p>Sequencing events (The past of the past)</p>
+            </a>
+            <a href="past-perfect-continuos.html" class="menu-item">
+                <h3>Past Perfect Continuous</h3>
+                <p>Duration before a past event</p>
+            </a>
+        </div>
+
+        <div class="category-column cat-future">
+            <h2 class="category-title">🔵 Future</h2>
+            
+            <a href="simple-future.html" class="menu-item">
+                <h3>Simple Future</h3>
+                <p>Predictions, promises, and logical projections</p>
+            </a>
+            <a href="future-continuos.html" class="menu-item">
+                <h3>Future Continuous</h3>
+                <p>Actions in progress at a future time</p>
+            </a>
+            <a href="future-perfect.html" class="menu-item">
+                <h3>Future Perfect</h3>
+                <p>Completion before a future deadline</p>
+            </a>
+            <a href="future-perfect-continuos.html" class="menu-item">
+                <h3>Future Perfect Continuous</h3>
+                <p>Cumulative duration into the future</p>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Past Continuous: Background Context & Interrupted Actions (IELTS 8.0)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2980b9;
+            --accent: #27ae60;
+            --warning: #f39c12;
+            --danger: #e74c3c;
+            --bg: #f5f6fa;
+            --text: #2f3640;
+        }
+
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 40px; }
+        .master-container { max-width: 1000px; margin: 0 auto; background: white; border-radius: 30px; box-shadow: 0 25px 50px rgba(0,0,0,0.1); overflow: hidden; }
+
+        /* Header */
+        .header { background: linear-gradient(135deg, var(--primary), #341f97); padding: 50px; color: white; text-align: center; }
+        .header h1 { margin: 0; font-size: 3rem; font-weight: 900; letter-spacing: -1px; }
+        .header p { opacity: 0.9; font-size: 1.2rem; margin-top: 10px; }
+
+        /* Timeline Section */
+        .section { padding: 40px; border-bottom: 1px solid #eee; }
+        .section-title { font-size: 1.2rem; font-weight: 800; text-transform: uppercase; color: #7f8c8d; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+        
+        .timeline-graphic { background: #f9f9f9; padding: 40px; border-radius: 20px; position: relative; text-align: center; }
+        .line { height: 4px; background: #dcdde1; width: 100%; position: relative; display: flex; justify-content: space-between; align-items: center; }
+        .now-marker { width: 20px; height: 20px; background: #b2bec3; border-radius: 50%; border: 4px solid white; box-shadow: 0 0 10px rgba(0,0,0,0.2); position: absolute; left: 75%; transform: translateX(-50%); z-index: 2; }
+        .past-marker { width: 16px; height: 16px; background: var(--warning); border-radius: 50%; border: 4px solid white; box-shadow: 0 0 10px rgba(0,0,0,0.2); position: absolute; left: 35%; transform: translateX(-50%); z-index: 3; }
+        .infinite-line { position: absolute; width: 30%; height: 8px; background: rgba(41, 128, 185, 0.4); border-radius: 4px; left: 15%; top: 38px; } /* خط استمرار در گذشته */
+
+        /* Structures */
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
+        .formula-card { background: #fff; border: 2px solid #f1f2f6; border-radius: 20px; padding: 25px; transition: 0.3s; }
+        .formula-card:hover { border-color: var(--primary); }
+        .code { font-family: 'JetBrains Mono', monospace; display: block; background: #2f3542; color: #fff; padding: 15px; border-radius: 12px; margin: 10px 0; font-size: 0.85rem; line-height: 1.4; }
+        
+        /* New Styles for added content */
+        .form-label { font-size: 0.8rem; font-weight: bold; color: #7f8c8d; text-transform: uppercase; display: inline-block; width: 30px; }
+        .code-neg { background: #c0392b; }
+        .code-que { background: #e67e22; }
+
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.9rem; }
+        th { text-align: left; padding: 10px; border-bottom: 2px solid var(--primary); color: var(--primary); }
+        td { padding: 10px; border-bottom: 1px solid #f1f2f6; }
+
+        /* IELTS Specifics */
+        .ielts-strategy { background: #f0fff4; border-left: 8px solid var(--accent); padding: 30px; border-radius: 0 20px 20px 0; }
+        .strategy-item { margin-bottom: 15px; }
+        .strategy-item b { color: var(--accent); display: block; font-size: 1.1rem; }
+
+        /* Error Warnings */
+        .error-box { background: #fff5f5; border: 2px dashed var(--danger); padding: 20px; border-radius: 20px; color: var(--danger); }
+        
+        .badge { padding: 5px 15px; border-radius: 50px; font-size: 0.8rem; font-weight: bold; background: #eee; }
+    </style>
+</head>
+<body>
+
+<div class="master-container">
+    <div class="header">
+        <h1>Past Continuous</h1>
+        <p>Mastery of Background Context, Interrupted Actions, and Parallel Events</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title"><span>⏳</span> Timeline & Concept</div>
+        <div class="timeline-graphic">
+            <div class="infinite-line"></div>
+            <div class="past-marker"></div>
+            <div class="now-marker"></div>
+            <div class="line">
+                <span>Past</span>
+                <span style="color: var(--primary); font-weight: 800; position: absolute; left: 35%; transform: translateX(-50%); top: 30px;">Action in Progress</span>
+                <span style="color: #7f8c8d; font-weight: 800; position: absolute; left: 75%; transform: translateX(-50%); top: 30px;">NOW</span>
+                <span>Future</span>
+            </div>
+            <p style="margin-top: 60px; font-weight: 600; color: var(--primary);">"It was happening in the background when suddenly, something else happened."</p>
+        </div>
+        
+    </div>
+
+    <div class="section">
+        <div class="section-title"><span>⚙️</span> Morphosyntactic Structure</div>
+        <div class="grid">
+            <div class="formula-card">
+                <span class="badge" style="background: #e1f5fe; color: #0288d1;">ACTIVE VOICE</span>
+                <div style="margin-top: 15px;">
+                    <span class="form-label">(+)</span>
+                    <code class="code">Subject + was/were + Verb-ing</code>
+                    <p style="font-size: 0.85rem; margin-top: 5px;"><i>"The economy <b>was recovering</b> slowly before the crash."</i></p>
+                    
+                    <span class="form-label">(-)</span>
+                    <code class="code code-neg">Subject + was/were not + Verb-ing</code>
+                    <p style="font-size: 0.85rem; margin-top: 5px;"><i>"Citizens <b>were not paying</b> attention to the warnings."</i></p>
+                    
+                    <span class="form-label">(?)</span>
+                    <code class="code code-que">Was/Were + Subject + Verb-ing?</code>
+                    <p style="font-size: 0.85rem; margin-top: 5px;"><i>"<b>Were</b> authorities <b>monitoring</b> the situation?"</i></p>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <span class="badge" style="background: #e8f5e9; color: #2e7d32;">PASSIVE VOICE (Band 8+)</span>
+                <div style="margin-top: 15px;">
+                    <span class="form-label">(+)</span>
+                    <code class="code">Subject + was/were + being + Past Participle</code>
+                    <p style="font-size: 0.85rem; margin-top: 5px;"><i>"New infrastructure <b>was being developed</b> across the region."</i></p>
+
+                    <span class="form-label">(-)</span>
+                    <code class="code code-neg">Subject + was/were not + being + Past Participle</code>
+                    <p style="font-size: 0.85rem; margin-top: 5px;"><i>"The old methods <b>were not being used</b> anymore."</i></p>
+
+                    <span class="form-label">(?)</span>
+                    <code class="code code-que">Was/Were + Subject + being + Past Participle?</code>
+                    <p style="font-size: 0.85rem; margin-top: 5px;"><i>"<b>Was</b> the data <b>being recorded</b> properly?"</i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title"><span>📝</span> Spelling & Advanced Mechanics</div>
+        <div class="grid">
+            <div class="formula-card">
+                <span class="badge">Spelling Rules (Same as Present Cont.)</span>
+                <table>
+                    <tr><th>Ending</th><th>Rule</th><th>Example</th></tr>
+                    <tr><td>Most verbs</td><td>+ ing</td><td>Work → Working</td></tr>
+                    <tr><td>Ends in 'e'</td><td>Drop 'e' + ing</td><td>Make → Making</td></tr>
+                    <tr><td>C-V-C (1 syllable)</td><td>Double last letter + ing</td><td>Sit → Sitting</td></tr>
+                    <tr><td>Ends in 'ie'</td><td>Change 'ie' to 'y' + ing</td><td>Lie → Lying</td></tr>
+                </table>
+            </div>
+
+            <div class="formula-card">
+                <span class="badge">Advanced Mechanics: When vs. While</span>
+                <div style="margin-top: 15px;">
+                    <b>WHILE (Continuous Action):</b>
+                    <p style="font-size: 0.85rem; margin-top: 5px;">Always followed by the <i>Past Continuous</i>.</p>
+                    <code class="code" style="background: #f1f2f6; color: #2f3640;">"<b>While</b> the population <b>was growing</b>, resources declined."</code>
+                    
+                    <b style="display: block; margin-top: 15px;">WHEN (Interruption):</b>
+                    <p style="font-size: 0.85rem; margin-top: 5px;">Usually followed by the <i>Simple Past</i>.</p>
+                    <code class="code" style="background: #f1f2f6; color: #2f3640;">"The system <b>was operating</b> fine <b>when</b> the power failed."</code>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title"><span>🛠️</span> Core Use Cases (When to use it)</div>
+        
+        <div class="grid">
+            <div class="formula-card" style="border-top: 4px solid var(--primary);">
+                <span class="badge" style="background: #e1f5fe; color: #0288d1;">1. Interrupted Actions in the Past</span>
+                <h4 style="margin: 10px 0 5px 0; font-size: 1rem;">کارهای استمراری که قطع شدند</h4>
+                <p style="font-size: 0.85rem; color: #636e72; margin-bottom: 15px;">An ongoing action in the past was interrupted by a shorter action (Simple Past).</p>
+                <div style="background: #f8f9fa; padding: 10px; border-radius: 8px;">
+                    <code style="color: var(--primary); font-size: 0.85rem;">"I <b>was sleeping</b> when the phone <b>rang</b>."</code><br>
+                    <code style="color: var(--primary); font-size: 0.85rem;">"He <b>was driving</b> fast when the police <b>stopped</b> him."</code>
+                </div>
+            </div>
+
+            <div class="formula-card" style="border-top: 4px solid var(--accent);">
+                <span class="badge" style="background: #e8f5e9; color: #2e7d32;">2. Parallel Actions</span>
+                <h4 style="margin: 10px 0 5px 0; font-size: 1rem;">دو کار استمراری همزمان در گذشته</h4>
+                <p style="font-size: 0.85rem; color: #636e72; margin-bottom: 15px;">When two continuous actions were happening at exactly the same time in the past.</p>
+                <div style="background: #f8f9fa; padding: 10px; border-radius: 8px;">
+                    <code style="color: var(--accent); font-size: 0.85rem;">"While she <b>was studying</b>, I <b>was making</b> dinner."</code><br>
+                    <code style="color: var(--accent); font-size: 0.85rem;">"The team <b>was researching</b> while the board <b>was debating</b>."</code>
+                </div>
+            </div>
+
+            <div class="formula-card" style="border-top: 4px solid var(--warning);">
+                <span class="badge" style="background: #fff8e1; color: #f39c12;">3. Setting the Scene (Storytelling)</span>
+                <h4 style="margin: 10px 0 5px 0; font-size: 1rem;">فضاسازی در داستان و روایت</h4>
+                <p style="font-size: 0.85rem; color: #636e72; margin-bottom: 15px;">To describe the background and atmosphere at the beginning of a story.</p>
+                <div style="background: #f8f9fa; padding: 10px; border-radius: 8px;">
+                    <code style="color: var(--warning); font-size: 0.85rem;">"The sun <b>was shining</b> and the birds <b>were singing</b>."</code><br>
+                    <code style="color: var(--warning); font-size: 0.85rem;">"Everyone <b>was talking</b> loudly in the room."</code>
+                </div>
+            </div>
+
+            <div class="formula-card" style="border-top: 4px solid #8e44ad;">
+                <span class="badge" style="background: #f3e5f5; color: #8e44ad;">4. Specific Time as an Interruption</span>
+                <h4 style="margin: 10px 0 5px 0; font-size: 1rem;">استمرار در یک زمان دقیق در گذشته</h4>
+                <p style="font-size: 0.85rem; color: #636e72; margin-bottom: 15px;">Used when stating exactly what was happening at a specific clock time in the past.</p>
+                <div style="background: #f8f9fa; padding: 10px; border-radius: 8px;">
+                    <code style="color: #8e44ad; font-size: 0.85rem;">"At 8 PM last night, I <b>was watching</b> a documentary."</code><br>
+                    <code style="color: #8e44ad; font-size: 0.85rem;">"They <b>were having</b> lunch at noon."</code>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title"><span>🎯</span> IELTS Strategic Application</div>
+        <div class="ielts-strategy">
+            
+            <div class="strategy-item" style="border-bottom: 1px dashed #c8e6c9; padding-bottom: 20px;">
+                <span class="badge" style="background: #27ae60; color: white;">Speaking Part 2</span>
+                <b style="margin-top: 8px;">Storytelling & Setting the Scene (GRA score)</b>
+                <p style="margin: 8px 0;">To get a Band 7+ in Speaking, you must show you can manipulate time. Start your Cue Card story by setting the background with Past Continuous before jumping into the main events (Simple Past).</p>
+                <div style="background: rgba(255,255,255,0.7); padding: 12px; border-radius: 8px; border-left: 4px solid var(--accent);">
+                    <i>Band 8 Example:</i> "I remember it vividly. I <b style="color: var(--primary); display: inline;">was preparing</b> for my final exams and the pressure <b style="color: var(--primary); display: inline;">was mounting</b>, when suddenly..."
+                </div>
+            </div>
+
+            <div class="strategy-item" style="border-bottom: 1px dashed #c8e6c9; padding-bottom: 20px; margin-top: 20px;">
+                <span class="badge" style="background: #2980b9; color: white;">Writing Task 2</span>
+                <b style="margin-top: 8px;">Providing Historical Context (Introductions)</b>
+                <p style="margin: 8px 0;">Use Past Continuous to explain a trend that was happening in the past to contrast it with what is happening today.</p>
+                <div style="background: rgba(255,255,255,0.7); padding: 12px; border-radius: 8px; border-left: 4px solid var(--primary);">
+                    <i>Band 8 Example:</i> "In the late 20th century, societies <b style="color: var(--primary); display: inline;">were gradually transitioning</b> towards digital communication; however, today..."
+                </div>
+            </div>
+
+            <div class="strategy-item" style="margin-top: 20px;">
+                <span class="badge" style="background: #8e44ad; color: white;">Writing Task 1</span>
+                <b style="margin-top: 8px;">Parallel Trends in the Past (Less Common but Powerful)</b>
+                <p style="margin: 8px 0;">If you have two lines on a graph in the past that cross each other, you can use "While" + Past Continuous to show the contrast.</p>
+                <div style="background: rgba(255,255,255,0.7); padding: 12px; border-radius: 8px; border-left: 4px solid #8e44ad;">
+                    <i>Band 8 Example:</i> "While the consumption of fossil fuels <b style="color: #8e44ad; display: inline;">was rapidly increasing</b>, renewable energy sources remained flat."
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section" style="border-bottom: none;">
+        <div class="section-title"><span>🚫</span> Common Band 6 Pitfalls</div>
+        <div class="error-box">
+            <p style="margin-top: 0; font-weight: bold;">Avoid these mistakes to secure a Band 7+ in Grammatical Range and Accuracy (GRA):</p>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li style="margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid rgba(231, 76, 60, 0.2);">
+                    <b style="color: #c0392b;">1. The "While vs. When" Confusion:</b> Using "while" before a short, sudden action instead of a continuous one.
+                    <br><span style="color: #e74c3c;">❌ <i><b>While</b> the phone rang, I was sleeping.</i></span>
+                    <br><span style="color: #27ae60;">✅ <i><b>When</b> the phone rang, I was sleeping.</i> OR <i><b>While</b> I was sleeping, the phone rang.</i></span>
+                </li>
+                <li style="margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid rgba(231, 76, 60, 0.2);">
+                    <b style="color: #c0392b;">2. Stative Verbs in the Past:</b> The rule applies here too! Verbs of state (know, want, belong) cannot be continuous, even in the past.
+                    <br><span style="color: #e74c3c;">❌ <i>At that time, I <b>was knowing</b> the answer.</i></span>
+                    <br><span style="color: #27ae60;">✅ <i>At that time, I <b>knew</b> the answer.</i></span>
+                </li>
+                <li>
+                    <b style="color: #c0392b;">3. Forgetting "being" in the Past Passive:</b> A severe error that changes the meaning entirely.
+                    <br><span style="color: #e74c3c;">❌ <i>In 2010, the new policy <b>was discussed</b> by the committee.</i> (Means the discussion was finished).</span>
+                    <br><span style="color: #27ae60;">✅ <i>In 2010, the new policy <b>was being discussed</b> by the committee.</i> (Means the discussion was ongoing at that time).</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

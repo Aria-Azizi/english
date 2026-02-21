@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Present Perfect Continuous: The Power of Persistence (IELTS 8.0)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2980b9;
+            --accent: #27ae60;
+            --warning: #f39c12;
+            --danger: #e74c3c;
+            --bg: #f5f6fa;
+            --text: #2f3640;
+        }
+
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 40px; }
+        .master-container { max-width: 1000px; margin: 0 auto; background: white; border-radius: 30px; box-shadow: 0 25px 50px rgba(0,0,0,0.1); overflow: hidden; }
+
+        /* Header */
+        .header { background: linear-gradient(135deg, var(--primary), #341f97); padding: 50px; color: white; text-align: center; }
+        .header h1 { margin: 0; font-size: 3rem; font-weight: 900; letter-spacing: -1px; }
+        .header p { opacity: 0.9; font-size: 1.2rem; margin-top: 10px; }
+
+        /* Timeline Section */
+        .section { padding: 40px; border-bottom: 1px solid #eee; }
+        .section-title { font-size: 1.2rem; font-weight: 800; text-transform: uppercase; color: #7f8c8d; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+        
+        .timeline-graphic { background: #f9f9f9; padding: 40px; border-radius: 20px; position: relative; text-align: center; }
+        .line { height: 4px; background: #dcdde1; width: 100%; position: relative; display: flex; justify-content: space-between; align-items: center; }
+        .now-marker { width: 24px; height: 24px; background: var(--danger); border-radius: 50%; border: 4px solid white; box-shadow: 0 0 10px rgba(0,0,0,0.2); position: absolute; left: 75%; transform: translateX(-50%); z-index: 2; }
+        .past-marker { width: 16px; height: 16px; background: var(--warning); border-radius: 50%; border: 4px solid white; box-shadow: 0 0 10px rgba(0,0,0,0.2); position: absolute; left: 25%; transform: translateX(-50%); z-index: 3; }
+        /* Dashed animated-looking line for continuous action up to now */
+        .infinite-line { position: absolute; width: 50%; height: 8px; border-bottom: 6px dashed var(--warning); left: 25%; top: 32px; } 
+
+        /* Structures */
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
+        .formula-card { background: #fff; border: 2px solid #f1f2f6; border-radius: 20px; padding: 25px; transition: 0.3s; }
+        .formula-card:hover { border-color: var(--primary); }
+        .code { font-family: 'JetBrains Mono', monospace; display: block; background: #2f3542; color: #fff; padding: 15px; border-radius: 12px; margin: 10px 0; font-size: 0.85rem; line-height: 1.4; }
+        
+        /* New Styles for added content */
+        .form-label { font-size: 0.8rem; font-weight: bold; color: #7f8c8d; text-transform: uppercase; display: inline-block; width: 30px; }
+        .code-neg { background: #c0392b; }
+        .code-que { background: #e67e22; }
+
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.9rem; }
+        th { text-align: left; padding: 10px; border-bottom: 2px solid var(--primary); color: var(--primary); }
+        td { padding: 10px; border-bottom: 1px solid #f1f2f6; }
+
+        /* IELTS Specifics */
+        .ielts-strategy { background: #f0fff4; border-left: 8px solid var(--accent); padding: 30px; border-radius: 0 20px 20px 0; }
+        .strategy-item { margin-bottom: 15px; }
+        .strategy-item b { color: var(--accent); display: block; font-size: 1.1rem; }
+
+        /* Error Warnings */
+        .error-box { background: #fff5f5; border: 2px dashed var(--danger); padding: 20px; border-radius: 20px; color: var(--danger); }
+        
+        .badge { padding: 5px 15px; border-radius: 50px; font-size: 0.8rem; font-weight: bold; background: #eee; }
+    </style>
+</head>
+<body>
+
+<div class="master-container">
+    <div class="header">
+        <h1>Present Perfect Continuous</h1>
+        <p>Mastery of Duration, Persistence, and Unfinished Actions</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title"><span>⏳</span> Timeline & Concept</div>
+        <div class="timeline-graphic">
+            <div class="infinite-line"></div>
+            <div class="past-marker"></div>
+            <div class="now-marker"></div>
+            <div class="line">
+                <span>Past</span>
+                <span style="color: var(--warning); font-weight: 800; position: absolute; left: 25%; transform: translateX(-50%); top: 30px;">Action Started</span>
+                <span style="color: var(--danger); font-weight: 800; position: absolute; left: 75%; transform: translateX(-50%); top: 30px;">Still Happening NOW</span>
+                <span>Future</span>
+            </div>
+            <p style="margin-top: 60px; font-weight: 600; color: var(--primary);">"Focus on the DURATION of the activity that started in the past and is still going on."</p>
+        </div>
+        
+    </div>
+
+    <div class="section">
+        <div class="section-title"><span>⚙️</span> Morphosyntactic Structure</div>
+        <div class="grid">
+            <div class="formula-card">
+                <span class="badge" style="background: #e1f5fe; color: #0288d1;">ACTIVE VOICE</span>
+                <div style="margin-top: 15px;">
+                    <span class="form-label">(+)</span>
+                    <code class="code">Subject + has/have + been + Verb-ing</code>
+                    <p style="font-size: 0.85rem; margin-top: 5px;"><i>"Scientists <b>have been warning</b> us about climate change."</i></p>
+                    
+                    <span class="form-label">(-)</span>
+                    <code class="code code-neg">Subject + has/have not + been + Verb-ing</code>
+                    <p style="font-size: 0.85rem; margin-top: 5px;"><i>"The government <b>has not been investing</b> enough."</i></p>
+                    
+                    <span class="form-label">(?)</span>
+                    <code class="code code-que">Has/Have + Subject + been + Verb-ing?</code>
+                    <p style="font-size: 0.85rem; margin-top: 5px;"><i>"<b>Have</b> you <b>been studying</b> for the IELTS exam?"</i></p>
+                </div>
+            </div>
+
+            <div class="formula-card" style="border: 2px dashed #e74c3c; background: #fff5f5;">
+                <span class="badge" style="background: #e74c3c; color: #fff;">PASSIVE VOICE (AVOID THIS!)</span>
+                <div style="margin-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #c0392b; font-weight: bold;">Band 8 Critical Rule:</p>
+                    <p style="font-size: 0.85rem; margin-top: 5px;">Technically, the passive form is <br><code>has been being + V3</code>, but native speakers <b>NEVER</b> use this because it sounds incredibly awkward.</p>
+                    
+                    <b style="display: block; margin-top: 15px; color: #27ae60;">The Band 8 Solution:</b>
+                    <p style="font-size: 0.85rem;">Switch back to <i>Present Perfect Simple Passive</i> instead!</p>
+                    <code class="code" style="background: #27ae60;">"The problem <b>has been discussed</b> for years."</code>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title"><span>📝</span> Spelling & Advanced Mechanics</div>
+        <div class="grid">
+            <div class="formula-card">
+                <span class="badge">Simple vs. Continuous (The Difference)</span>
+                <div style="margin-top: 15px;">
+                    <b>Present Perfect SIMPLE:</b>
+                    <p style="font-size: 0.85rem; margin-top: 5px;">Focuses on the <b>Result</b> or <b>Completion</b>.</p>
+                    <code class="code" style="background: #f1f2f6; color: #2f3640;">"I <b>have read</b> the book." (I finished it)</code>
+                    
+                    <b style="display: block; margin-top: 15px;">Present Perfect CONTINUOUS:</b>
+                    <p style="font-size: 0.85rem; margin-top: 5px;">Focuses on the <b>Duration</b> or the <b>Activity</b> itself.</p>
+                    <code class="code" style="background: #f1f2f6; color: #2f3640;">"I <b>have been reading</b> the book." (I am still reading it)</code>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <span class="badge">Key Academic Markers</span>
+                <div style="margin-top: 15px;">
+                    <b>Time Durations:</b>
+                    <code class="code" style="background: #f1f2f6; color: #2f3640;">For decades | Since the turn of the century | All day | Recently</code>
+                    
+                    <b style="display: block; margin-top: 15px;">Lately vs. Recently:</b>
+                    <p style="font-size: 0.85rem;">Used heavily with this tense to show an action that started not long ago and is continuing.</p>
+                    <code class="code" style="background: #f1f2f6; color: #2f3640;">"The economy has been struggling <b>lately</b>."</code>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title"><span>🛠️</span> Core Use Cases (When to use it)</div>
+        
+        <div class="grid">
+            <div class="formula-card" style="border-top: 4px solid var(--primary);">
+                <span class="badge" style="background: #e1f5fe; color: #0288d1;">1. Emphasizing Duration</span>
+                <h4 style="margin: 10px 0 5px 0; font-size: 1rem;">تأکید بر طول مدت یک کار مستمر</h4>
+                <p style="font-size: 0.85rem; color: #636e72; margin-bottom: 15px;">To show how long an action has been happening up to now (often with for/since).</p>
+                <div style="background: #f8f9fa; padding: 10px; border-radius: 8px;">
+                    <code style="color: var(--primary); font-size: 0.85rem;">"They <b>have been working</b> on this project for 3 years."</code><br>
+                    <code style="color: var(--primary); font-size: 0.85rem;">"It <b>has been raining</b> since Tuesday."</code>
+                </div>
+            </div>
+
+            <div class="formula-card" style="border-top: 4px solid var(--accent);">
+                <span class="badge" style="background: #e8f5e9; color: #2e7d32;">2. Temporary Ongoing Situations</span>
+                <h4 style="margin: 10px 0 5px 0; font-size: 1rem;">شرایط موقتی از گذشته تا الان</h4>
+                <p style="font-size: 0.85rem; color: #636e72; margin-bottom: 15px;">To talk about a temporary habit or situation that started recently.</p>
+                <div style="background: #f8f9fa; padding: 10px; border-radius: 8px;">
+                    <code style="color: var(--accent); font-size: 0.85rem;">"I <b>have been walking</b> to work recently because my car is broken."</code><br>
+                    <code style="color: var(--accent); font-size: 0.85rem;">"She <b>has been eating</b> healthier lately."</code>
+                </div>
+            </div>
+
+            <div class="formula-card" style="border-top: 4px solid var(--warning);">
+                <span class="badge" style="background: #fff8e1; color: #f39c12;">3. Action Finished with Present Evidence</span>
+                <h4 style="margin: 10px 0 5px 0; font-size: 1rem;">کار تازه تمام شده با اثر فیزیکی مشهود</h4>
+                <p style="font-size: 0.85rem; color: #636e72; margin-bottom: 15px;">The action just stopped, but you can see, smell, or feel the immediate result.</p>
+                <div style="background: #f8f9fa; padding: 10px; border-radius: 8px;">
+                    <code style="color: var(--warning); font-size: 0.85rem;">"You look exhausted. <b>Have</b> you <b>been running</b>?"</code><br>
+                    <code style="color: var(--warning); font-size: 0.85rem;">"The ground is wet because it <b>has been raining</b>."</code>
+                </div>
+            </div>
+
+            <div class="formula-card" style="border-top: 4px solid #8e44ad;">
+                <span class="badge" style="background: #f3e5f5; color: #8e44ad;">4. Repeated Actions (Persistence)</span>
+                <h4 style="margin: 10px 0 5px 0; font-size: 1rem;">کارهای تکرارشونده و پافشاری</h4>
+                <p style="font-size: 0.85rem; color: #636e72; margin-bottom: 15px;">To express annoyance or emphasis about an action repeated multiple times until now.</p>
+                <div style="background: #f8f9fa; padding: 10px; border-radius: 8px;">
+                    <code style="color: #8e44ad; font-size: 0.85rem;">"I <b>have been calling</b> you all day! Where were you?"</code><br>
+                    <code style="color: #8e44ad; font-size: 0.85rem;">"Critics <b>have been arguing</b> about this for months."</code>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title"><span>🎯</span> IELTS Strategic Application</div>
+        <div class="ielts-strategy">
+            
+            <div class="strategy-item" style="border-bottom: 1px dashed #c8e6c9; padding-bottom: 20px;">
+                <span class="badge" style="background: #27ae60; color: white;">Writing Task 2</span>
+                <b style="margin-top: 8px;">Highlighting Persistent Societal Problems</b>
+                <p style="margin: 8px 0;">Use this tense in your body paragraphs to emphasize that a problem is not new, but has been an ongoing struggle for society or governments over a period of time.</p>
+                <div style="background: rgba(255,255,255,0.7); padding: 12px; border-radius: 8px; border-left: 4px solid var(--accent);">
+                    <i>Band 8 Example:</i> "For decades, governments <b style="color: var(--primary); display: inline;">have been attempting</b> to eradicate poverty, yet the issue persists."
+                </div>
+            </div>
+
+            <div class="strategy-item" style="border-bottom: 1px dashed #c8e6c9; padding-bottom: 20px; margin-top: 20px;">
+                <span class="badge" style="background: #2980b9; color: white;">Speaking Parts 1 & 2</span>
+                <b style="margin-top: 8px;">Answering "How long...?" Questions</b>
+                <p style="margin: 8px 0;">If the examiner asks "How long have you lived here?" or "How long have you been studying English?", answering with Present Perfect Continuous guarantees a high GRA score.</p>
+                <div style="background: rgba(255,255,255,0.7); padding: 12px; border-radius: 8px; border-left: 4px solid var(--primary);">
+                    <i>Band 8 Example:</i> "I <b style="color: var(--primary); display: inline;">have been living</b> in this city since I was a child."
+                </div>
+            </div>
+
+            <div class="strategy-item" style="margin-top: 20px;">
+                <span class="badge" style="background: #8e44ad; color: white;">Speaking Part 3</span>
+                <b style="margin-top: 8px;">Explaining Current Trends (Lately)</b>
+                <p style="margin: 8px 0;">Use this to describe what people in your country are doing *lately* to adapt to new situations.</p>
+                <div style="background: rgba(255,255,255,0.7); padding: 12px; border-radius: 8px; border-left: 4px solid #8e44ad;">
+                    <i>Band 8 Example:</i> "Recently, more young people <b style="color: #8e44ad; display: inline;">have been opting</b> for freelance work rather than traditional office jobs."
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section" style="border-bottom: none;">
+        <div class="section-title"><span>🚫</span> Common Band 6 Pitfalls</div>
+        <div class="error-box">
+            <p style="margin-top: 0; font-weight: bold;">Avoid these mistakes to secure a Band 7+ in Grammatical Range and Accuracy (GRA):</p>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li style="margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid rgba(231, 76, 60, 0.2);">
+                    <b style="color: #c0392b;">1. The Stative Verb Trap (Again!):</b> You CANNOT use verbs of state (know, like, belong, have) in any continuous tense, even this one.
+                    <br><span style="color: #e74c3c;">❌ <i>I <b>have been knowing</b> my best friend for 10 years.</i></span>
+                    <br><span style="color: #27ae60;">✅ <i>I <b>have known</b> my best friend for 10 years.</i> (Use Present Perfect Simple)</span>
+                </li>
+                <li style="margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid rgba(231, 76, 60, 0.2);">
+                    <b style="color: #c0392b;">2. Dropping "been":</b> In the heat of the Speaking exam, candidates often mix up tenses and drop the word 'been'.
+                    <br><span style="color: #e74c3c;">❌ <i>They <b>have working</b> hard lately.</i></span>
+                    <br><span style="color: #27ae60;">✅ <i>They <b>have been working</b> hard lately.</i></span>
+                </li>
+                <li>
+                    <b style="color: #c0392b;">3. Simple vs. Continuous Confusion with Quantities:</b> If you mention exactly "how much" or "how many" things are finished, you MUST use Simple, not Continuous.
+                    <br><span style="color: #e74c3c;">❌ <i>I <b>have been writing</b> three essays today.</i> (Focus is on the quantity finished)</span>
+                    <br><span style="color: #27ae60;">✅ <i>I <b>have written</b> three essays today.</i></span>
+                    <br><span style="color: #27ae60;">✅ <i>I <b>have been writing</b> essays all day.</i> (Focus is on the duration/activity)</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

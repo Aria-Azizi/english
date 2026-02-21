@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Present: The Foundation of Facts (IELTS 8.0)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2980b9;
+            --accent: #27ae60;
+            --warning: #f39c12;
+            --danger: #e74c3c;
+            --bg: #f5f6fa;
+            --text: #2f3640;
+        }
+
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 40px; }
+        .master-container { max-width: 1000px; margin: 0 auto; background: white; border-radius: 30px; box-shadow: 0 25px 50px rgba(0,0,0,0.1); overflow: hidden; }
+
+        /* Header */
+        .header { background: linear-gradient(135deg, var(--primary), #341f97); padding: 50px; color: white; text-align: center; }
+        .header h1 { margin: 0; font-size: 3rem; font-weight: 900; letter-spacing: -1px; }
+        .header p { opacity: 0.9; font-size: 1.2rem; margin-top: 10px; }
+
+        /* Timeline Section */
+        .section { padding: 40px; border-bottom: 1px solid #eee; }
+        .section-title { font-size: 1.2rem; font-weight: 800; text-transform: uppercase; color: #7f8c8d; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+        
+        .timeline-graphic { background: #f9f9f9; padding: 40px; border-radius: 20px; position: relative; text-align: center; }
+        .line { height: 4px; background: #dcdde1; width: 100%; position: relative; display: flex; justify-content: space-between; align-items: center; }
+        .now-marker { width: 20px; height: 20px; background: var(--danger); border-radius: 50%; border: 4px solid white; box-shadow: 0 0 10px rgba(0,0,0,0.2); position: absolute; left: 50%; transform: translateX(-50%); }
+        .infinite-line { position: absolute; width: 100%; height: 8px; background: rgba(41, 128, 185, 0.2); border-radius: 4px; }
+
+        /* Structures */
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
+        .formula-card { background: #fff; border: 2px solid #f1f2f6; border-radius: 20px; padding: 25px; transition: 0.3s; }
+        .formula-card:hover { border-color: var(--primary); }
+        .code { font-family: 'JetBrains Mono', monospace; display: block; background: #2f3542; color: #fff; padding: 15px; border-radius: 12px; margin: 10px 0; font-size: 0.85rem; line-height: 1.4; }
+        
+        /* New Styles for added content */
+        .form-label { font-size: 0.8rem; font-weight: bold; color: #7f8c8d; text-transform: uppercase; display: inline-block; width: 30px; }
+        .code-neg { background: #c0392b; } /* رنگ قرمز برای فرمول منفی */
+        .code-que { background: #e67e22; } /* رنگ نارنجی برای فرمول سوالی */
+
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.9rem; }
+        th { text-align: left; padding: 10px; border-bottom: 2px solid var(--primary); color: var(--primary); }
+        td { padding: 10px; border-bottom: 1px solid #f1f2f6; }
+
+        /* IELTS Specifics */
+        .ielts-strategy { background: #f0fff4; border-left: 8px solid var(--accent); padding: 30px; border-radius: 0 20px 20px 0; }
+        .strategy-item { margin-bottom: 15px; }
+        .strategy-item b { color: var(--accent); display: block; font-size: 1.1rem; }
+
+        /* Error Warnings */
+        .error-box { background: #fff5f5; border: 2px dashed var(--danger); padding: 20px; border-radius: 20px; color: var(--danger); }
+        
+        .badge { padding: 5px 15px; border-radius: 50px; font-size: 0.8rem; font-weight: bold; background: #eee; }
+    </style>
+</head>
+<body>
+
+<div class="master-container">
+    <div class="header">
+        <h1>Simple Present</h1>
+        <p>Mastery of Facts, Processes, and Universal Truths</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title"><span>⏳</span> Timeline & Concept</div>
+        <div class="timeline-graphic">
+            <div class="now-marker"></div>
+            <div class="infinite-line"></div>
+            <div class="line">
+                <span>Past</span>
+                <span style="color: var(--danger); font-weight: 800;">NOW (General)</span>
+                <span>Future</span>
+            </div>
+            <p style="margin-top: 30px; font-weight: 600; color: var(--primary);">"It's not just about now; it's about ALWAYS."</p>
+        </div>
+        
+    </div>
+
+    <div class="section">
+        <div class="section-title"><span>⚙️</span> Morphosyntactic Structure</div>
+        <div class="grid">
+            <div class="formula-card">
+                <span class="badge" style="background: #e1f5fe; color: #0288d1;">ACTIVE VOICE</span>
+                <div style="margin-top: 15px;">
+                    <span class="form-label">(+)</span>
+                    <code class="code">Subject + Base Verb (s/es)</code>
+                    <p style="font-size: 0.85rem; margin-top: 5px;"><i>"The engine <b>works</b> efficiently."</i></p>
+                    
+                    <span class="form-label">(-)</span>
+                    <code class="code code-neg">Subject + do/does not + Base Verb</code>
+                    <p style="font-size: 0.85rem; margin-top: 5px;"><i>"The data <b>does not support</b> the theory."</i></p>
+                    
+                    <span class="form-label">(?)</span>
+                    <code class="code code-que">Do/Does + Subject + Base Verb?</code>
+                    <p style="font-size: 0.85rem; margin-top: 5px;"><i>"<b>Does</b> the policy <b>improve</b> life quality?"</i></p>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <span class="badge" style="background: #e8f5e9; color: #2e7d32;">PASSIVE VOICE (Band 8+)</span>
+                <div style="margin-top: 15px;">
+                    <span class="form-label">(+)</span>
+                    <code class="code">Subject + am/is/are + Past Participle</code>
+                    <p style="font-size: 0.85rem; margin-top: 5px;"><i>"The law <b>is enforced</b> globally."</i></p>
+
+                    <span class="form-label">(-)</span>
+                    <code class="code code-neg">Subject + am/is/are not + Past Participle</code>
+                    <p style="font-size: 0.85rem; margin-top: 5px;"><i>"Safety <b>is not compromised</b>."</i></p>
+
+                    <span class="form-label">(?)</span>
+                    <code class="code code-que">Am/Is/Are + Subject + Past Participle?</code>
+                    <p style="font-size: 0.85rem; margin-top: 5px;"><i>"<b>Is</b> the waste <b>recycled</b> properly?"</i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title"><span>📝</span> Spelling & Advanced Mechanics</div>
+        <div class="grid">
+            <div class="formula-card">
+                <span class="badge">Spelling Rules (3rd Person 's')</span>
+                <table>
+                    <tr><th>Ending</th><th>Rule</th><th>Example</th></tr>
+                    <tr><td>Most verbs</td><td>+ s</td><td>Works, Plays</td></tr>
+                    <tr><td>s, ch, sh, x, z</td><td>+ es</td><td>Watches, Fixes</td></tr>
+                    <tr><td>Consonant + y</td><td>-y + ies</td><td>Studies, Relies</td></tr>
+                    <tr><td>Vowel + y</td><td>+ s</td><td>Enjoys, Stays</td></tr>
+                </table>
+            </div>
+
+            <div class="formula-card">
+                <span class="badge">Adverbs & Hedging</span>
+                <div style="margin-top: 15px;">
+                    <b>Frequency Adverbs:</b>
+                    <code class="code" style="background: #f1f2f6; color: #2f3640;">Always > Usually > Often > Seldom > Never</code>
+                    <p style="font-size: 0.85rem;">* Place <u>before</u> main verb, but <u>after</u> 'Be' verb.</p>
+                    
+                    <b style="display: block; margin-top: 15px;">Academic Hedging (Band 8):</b>
+                    <p style="font-size: 0.85rem;">Avoid 100% certainty. Use verbs like <i>seem</i> or <i>appear</i>.</p>
+                    <code class="code" style="background: #f1f2f6; color: #2f3640;">"The trend <b>appears to</b> indicate a decline."</code>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="section">
+        <div class="section-title"><span>🛠️</span> Core Use Cases (When to use it)</div>
+        
+        <div class="grid">
+            
+            <div class="formula-card" style="border-top: 4px solid var(--primary);">
+                <span class="badge" style="background: #e1f5fe; color: #0288d1;">1. Facts & General Truths</span>
+                <h4 style="margin: 10px 0 5px 0; font-size: 1rem;">حقایق و واقعیت‌های همیشگی</h4>
+                <p style="font-size: 0.85rem; color: #636e72; margin-bottom: 15px;">To talk about things that are always true, scientific facts, or permanent situations.</p>
+                <div style="background: #f8f9fa; padding: 10px; border-radius: 8px;">
+                    <code style="color: var(--primary); font-size: 0.85rem;">"The Earth <b>revolves</b> around the Sun."</code><br>
+                    <code style="color: var(--primary); font-size: 0.85rem;">"He <b>works</b> as a software engineer."</code>
+                </div>
+            </div>
+
+            <div class="formula-card" style="border-top: 4px solid var(--accent);">
+                <span class="badge" style="background: #e8f5e9; color: #2e7d32;">2. Habits & Routines</span>
+                <h4 style="margin: 10px 0 5px 0; font-size: 1rem;">عادت‌ها و کارهای روتین</h4>
+                <p style="font-size: 0.85rem; color: #636e72; margin-bottom: 15px;">To describe actions that happen regularly, often used with adverbs of frequency.</p>
+                <div style="background: #f8f9fa; padding: 10px; border-radius: 8px;">
+                    <code style="color: var(--accent); font-size: 0.85rem;">"I usually <b>wake up</b> at 6 AM."</code><br>
+                    <code style="color: var(--accent); font-size: 0.85rem;">"They <b>go</b> to the gym every weekend."</code>
+                </div>
+            </div>
+
+            <div class="formula-card" style="border-top: 4px solid var(--warning);">
+                <span class="badge" style="background: #fff8e1; color: #f39c12;">3. Scheduled Future Events</span>
+                <h4 style="margin: 10px 0 5px 0; font-size: 1rem;">برنامه‌های زمان‌بندی شده در آینده</h4>
+                <p style="font-size: 0.85rem; color: #636e72; margin-bottom: 15px;">To talk about official timetables, flights, or public schedules (even if they are in the future).</p>
+                <div style="background: #f8f9fa; padding: 10px; border-radius: 8px;">
+                    <code style="color: var(--warning); font-size: 0.85rem;">"The train <b>leaves</b> at 8:30 tomorrow."</code><br>
+                    <code style="color: var(--warning); font-size: 0.85rem;">"When <b>does</b> the conference <b>start</b>?"</code>
+                </div>
+            </div>
+
+            <div class="formula-card" style="border-top: 4px solid #8e44ad;">
+                <span class="badge" style="background: #f3e5f5; color: #8e44ad;">4. Narratives & Reviews</span>
+                <h4 style="margin: 10px 0 5px 0; font-size: 1rem;">خلاصه‌ داستان و نقد فیلم/کتاب</h4>
+                <p style="font-size: 0.85rem; color: #636e72; margin-bottom: 15px;">Used dramatically to tell a story or describe the plot of a book or movie (Speaking Part 2).</p>
+                <div style="background: #f8f9fa; padding: 10px; border-radius: 8px;">
+                    <code style="color: #8e44ad; font-size: 0.85rem;">"In the end, the hero <b>saves</b> the city."</code><br>
+                    <code style="color: #8e44ad; font-size: 0.85rem;">"The author <b>argues</b> that..."</code>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<div class="section">
+        <div class="section-title"><span>🎯</span> IELTS Strategic Application</div>
+        <div class="ielts-strategy">
+            
+            <div class="strategy-item" style="border-bottom: 1px dashed #c8e6c9; padding-bottom: 20px;">
+                <span class="badge" style="background: #27ae60; color: white;">Writing Task 1</span>
+                <b style="margin-top: 8px;">Process Diagrams (Manufacturing & Nature)</b>
+                <p style="margin: 8px 0;">Simple Present is <b>mandatory</b> for describing cycles. To get a Band 8, you must mix Active and Passive voices.</p>
+                
+                <div style="background: rgba(255,255,255,0.7); padding: 12px; border-radius: 8px; border-left: 4px solid var(--accent);">
+                    <i>Band 8 Example:</i> "Once the raw materials <b style="color: var(--primary); display: inline;">arrive</b> <i>(Active)</i>, they <b style="color: var(--accent); display: inline;">are sorted</b> <i>(Passive)</i> by size."
+                </div>
+            </div>
+
+            <div class="strategy-item" style="border-bottom: 1px dashed #c8e6c9; padding-bottom: 20px; margin-top: 20px;">
+                <span class="badge" style="background: #2980b9; color: white;">Writing Task 2</span>
+                <b style="margin-top: 8px;">Academic Truths & Scientific Reporting</b>
+                <p style="margin: 8px 0;">Use it for citing research, universal claims, or stating your main thesis. Use "Hedging" verbs (suggest, indicate) instead of absolute words (prove).</p>
+                <div style="background: rgba(255,255,255,0.7); padding: 12px; border-radius: 8px; border-left: 4px solid var(--primary);">
+                    <i>Band 8 Example:</i> "Evidence <b style="color: var(--primary); display: inline;">suggests</b> that sedentary lifestyles <b style="color: var(--primary); display: inline;">contribute</b> to obesity."
+                </div>
+            </div>
+
+            <div class="strategy-item" style="margin-top: 20px;">
+                <span class="badge" style="background: #8e44ad; color: white;">Grammatical Range</span>
+                <b style="margin-top: 8px;">Zero Conditional (Logical Certainty)</b>
+                <p style="margin: 8px 0;">Used to show a 100% direct cause and effect. This structure proves to the examiner you can handle complex sentences.</p>
+                <code class="code" style="background: #f1f2f6; color: #2f3640; display: inline-block; padding: 5px 10px; margin-bottom: 8px;">If + Simple Present, Simple Present</code>
+                <div style="background: rgba(255,255,255,0.7); padding: 12px; border-radius: 8px; border-left: 4px solid #8e44ad;">
+                    <i>Band 8 Example:</i> "If the global temperature <b style="color: #8e44ad; display: inline;">rises</b>, polar ice <b style="color: #8e44ad; display: inline;">melts</b> at a faster rate."
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section" style="border-bottom: none;">
+        <div class="section-title"><span>🚫</span> Common Band 6 Pitfalls</div>
+        <div class="error-box">
+            <p style="margin-top: 0; font-weight: bold;">Avoid these mistakes to secure a Band 7+ in Grammatical Range and Accuracy (GRA):</p>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li style="margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid rgba(231, 76, 60, 0.2);">
+                    <b style="color: #c0392b;">1. Subject-Verb Agreement Failure:</b> Forgetting the 3rd person 's' in complex subjects.
+                    <br><span style="color: #e74c3c;">❌ <i>The group of international students <b>are</b>...</i></span>
+                    <br><span style="color: #27ae60;">✅ <i>The group of international students <b>is</b>...</i></span>
+                </li>
+                <li style="margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid rgba(231, 76, 60, 0.2);">
+                    <b style="color: #c0392b;">2. The Stative Verb Trap:</b> Using Continuous (-ing) for verbs of mind and possession.
+                    <br><span style="color: #e74c3c;">❌ <i>The new policy <b>is consisting</b> of three parts.</i></span>
+                    <br><span style="color: #27ae60;">✅ <i>The new policy <b>consists</b> of three parts.</i></span>
+                </li>
+                <li>
+                    <b style="color: #c0392b;">3. Confusion with Continuous:</b> Using Simple Present for temporary actions happening <i>right now</i>.
+                    <br><span style="color: #e74c3c;">❌ <i>Currently, the government <b>invests</b> heavily in AI.</i> (If it's a temporary ongoing trend)</span>
+                    <br><span style="color: #27ae60;">✅ <i>Currently, the government <b>is investing</b> heavily in AI.</i></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

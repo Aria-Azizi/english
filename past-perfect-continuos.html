@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Past Perfect Continuous: Duration Before the Past (IELTS 8.0)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #8e44ad; /* Purple for Past Perfect family */
+            --accent: #27ae60;
+            --warning: #f39c12;
+            --danger: #e74c3c;
+            --bg: #f5f6fa;
+            --text: #2f3640;
+            --blue: #2980b9;
+        }
+
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 40px; }
+        .master-container { max-width: 1000px; margin: 0 auto; background: white; border-radius: 30px; box-shadow: 0 25px 50px rgba(0,0,0,0.1); overflow: hidden; }
+
+        /* Header */
+        .header { background: linear-gradient(135deg, var(--primary), #2c3e50); padding: 50px; color: white; text-align: center; }
+        .header h1 { margin: 0; font-size: 3rem; font-weight: 900; letter-spacing: -1px; }
+        .header p { opacity: 0.9; font-size: 1.2rem; margin-top: 10px; }
+
+        /* Timeline Section */
+        .section { padding: 40px; border-bottom: 1px solid #eee; }
+        .section-title { font-size: 1.2rem; font-weight: 800; text-transform: uppercase; color: #7f8c8d; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+        
+        .timeline-graphic { background: #f9f9f9; padding: 40px; border-radius: 20px; position: relative; text-align: center; }
+        .line { height: 4px; background: #dcdde1; width: 100%; position: relative; display: flex; justify-content: space-between; align-items: center; }
+        
+        /* Timeline Markers */
+        .now-marker { width: 20px; height: 20px; background: #b2bec3; border-radius: 50%; border: 4px solid white; box-shadow: 0 0 10px rgba(0,0,0,0.2); position: absolute; left: 85%; transform: translateX(-50%); z-index: 2; }
+        .past-marker { width: 18px; height: 18px; background: var(--warning); border-radius: 50%; border: 4px solid white; box-shadow: 0 0 10px rgba(0,0,0,0.2); position: absolute; left: 60%; transform: translateX(-50%); z-index: 3; }
+        /* Dashed animated-looking line for continuous action up to a past point */
+        .infinite-line { position: absolute; width: 40%; height: 8px; border-bottom: 6px dashed var(--primary); left: 20%; top: 32px; }
+
+        /* Structures */
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
+        .formula-card { background: #fff; border: 2px solid #f1f2f6; border-radius: 20px; padding: 25px; transition: 0.3s; }
+        .formula-card:hover { border-color: var(--primary); }
+        .code { font-family: 'JetBrains Mono', monospace; display: block; background: #2f3542; color: #fff; padding: 15px; border-radius: 12px; margin: 10px 0; font-size: 0.85rem; line-height: 1.4; }
+        
+        /* New Styles for added content */
+        .form-label { font-size: 0.8rem; font-weight: bold; color: #7f8c8d; text-transform: uppercase; display: inline-block; width: 30px; }
+        .code-neg { background: #c0392b; }
+        .code-que { background: #e67e22; }
+
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.9rem; }
+        th { text-align: left; padding: 10px; border-bottom: 2px solid var(--primary); color: var(--primary); }
+        td { padding: 10px; border-bottom: 1px solid #f1f2f6; }
+
+        /* IELTS Specifics */
+        .ielts-strategy { background: #f0fff4; border-left: 8px solid var(--accent); padding: 30px; border-radius: 0 20px 20px 0; }
+        .strategy-item { margin-bottom: 15px; }
+        .strategy-item b { color: var(--accent); display: block; font-size: 1.1rem; }
+
+        /* Error Warnings */
+        .error-box { background: #fff5f5; border: 2px dashed var(--danger); padding: 20px; border-radius: 20px; color: var(--danger); }
+        
+        .badge { padding: 5px 15px; border-radius: 50px; font-size: 0.8rem; font-weight: bold; background: #eee; }
+    </style>
+</head>
+<body>
+
+<div class="master-container">
+    <div class="header">
+        <h1>Past Perfect Continuous</h1>
+        <p>The "Duration Before the Past" Tense</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title"><span>⏳</span> Timeline & Concept</div>
+        <div class="timeline-graphic">
+            <div class="infinite-line"></div>
+            <div class="past-marker"></div>
+            <div class="now-marker"></div>
+            <div class="line">
+                <span>Past</span>
+                <span style="color: var(--primary); font-weight: 800; position: absolute; left: 40%; transform: translateX(-50%); top: 30px;">Action in Progress</span>
+                <span style="color: var(--warning); font-weight: 800; position: absolute; left: 60%; transform: translateX(-50%); top: 30px;">Reference Point</span>
+                <span style="color: #7f8c8d; font-weight: 800; position: absolute; left: 85%; transform: translateX(-50%); top: 30px;">NOW</span>
+                <span>Future</span>
+            </div>
+            <p style="margin-top: 60px; font-weight: 600; color: var(--primary);">"It emphasizes HOW LONG an action was happening right up to a certain point in the past."</p>
+        </div>
+        
+    </div>
+
+    <div class="section">
+        <div class="section-title"><span>⚙️</span> Morphosyntactic Structure</div>
+        <div class="grid">
+            <div class="formula-card">
+                <span class="badge" style="background: #f3e5f5; color: #8e44ad;">ACTIVE VOICE</span>
+                <div style="margin-top: 15px;">
+                    <span class="form-label">(+)</span>
+                    <code class="code">Subject + had + been + Verb-ing</code>
+                    <p style="font-size: 0.85rem; margin-top: 5px;"><i>"The researchers <b>had been working</b> for years before they found the cure."</i></p>
+                    
+                    <span class="form-label">(-)</span>
+                    <code class="code code-neg">Subject + had not + been + Verb-ing</code>
+                    <p style="font-size: 0.85rem; margin-top: 5px;"><i>"They <b>had not been paying</b> attention when the error occurred."</i></p>
+                    
+                    <span class="form-label">(?)</span>
+                    <code class="code code-que">Had + Subject + been + Verb-ing?</code>
+                    <p style="font-size: 0.85rem; margin-top: 5px;"><i>"<b>Had</b> the machine <b>been operating</b> normally before it broke?"</i></p>
+                </div>
+            </div>
+
+            <div class="formula-card" style="border: 2px dashed #e74c3c; background: #fff5f5;">
+                <span class="badge" style="background: #e74c3c; color: #fff;">PASSIVE VOICE (AVOID THIS!)</span>
+                <div style="margin-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #c0392b; font-weight: bold;">Band 8 Critical Rule:</p>
+                    <p style="font-size: 0.85rem; margin-top: 5px;">The structure <code>had been being + V3</code> exists in grammar books but is <b>never</b> used in real English because it's too clumsy.</p>
+                    
+                    <b style="display: block; margin-top: 15px; color: #27ae60;">The Band 8 Solution:</b>
+                    <p style="font-size: 0.85rem;">Use the <i>Past Perfect Simple Passive</i> instead.</p>
+                    <code class="code" style="background: #27ae60;">"The data <b>had been analyzed</b> (not had been being analyzed) for months."</code>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title"><span>📝</span> Spelling & Advanced Mechanics</div>
+        <div class="grid">
+            <div class="formula-card">
+                <span class="badge">Past Perfect: Simple vs. Continuous</span>
+                <div style="margin-top: 15px;">
+                    <b>SIMPLE (Focus on Completion/Result):</b>
+                    <p style="font-size: 0.85rem; margin-top: 5px;">Used when the action was completely finished, or focusing on 'how many'.</p>
+                    <code class="code" style="background: #f1f2f6; color: #2f3640;">"She <b>had written</b> three letters before 10 AM."</code>
+                    
+                    <b style="display: block; margin-top: 15px;">CONTINUOUS (Focus on Duration):</b>
+                    <p style="font-size: 0.85rem; margin-top: 5px;">Used when the action was ongoing up to that past point, focusing on 'how long'.</p>
+                    <code class="code" style="background: #f1f2f6; color: #2f3640;">"She <b>had been writing</b> letters all morning."</code>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <span class="badge">Essential Time Triggers</span>
+                <div style="margin-top: 15px;">
+                    <b>For & Since (in the Past):</b>
+                    <p style="font-size: 0.85rem;">We use 'for' and 'since' just like Present Perfect, but the reference point is in the past.</p>
+                    <code class="code" style="background: #f1f2f6; color: #2f3640;">"By 2010, they had been living there <b>for</b> five years."</code>
+                    
+                    <b style="display: block; margin-top: 15px;">Before / When / By the time:</b>
+                    <p style="font-size: 0.85rem;">These connect the continuous action to the simple past interruption.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title"><span>🛠️</span> Core Use Cases (When to use it)</div>
+        
+        <div class="grid">
+            <div class="formula-card" style="border-top: 4px solid var(--primary);">
+                <span class="badge" style="background: #f3e5f5; color: #8e44ad;">1. Duration Before Something in the Past</span>
+                <h4 style="margin: 10px 0 5px 0; font-size: 1rem;">استمرار تا قبل از یک اتفاق دیگر</h4>
+                <p style="font-size: 0.85rem; color: #636e72; margin-bottom: 15px;">To show that something started in the past and continued up until another time in the past.</p>
+                <div style="background: #f8f9fa; padding: 10px; border-radius: 8px;">
+                    <code style="color: var(--primary); font-size: 0.85rem;">"They <b>had been talking</b> for over an hour before Tony arrived."</code><br>
+                    <code style="color: var(--primary); font-size: 0.85rem;">"She <b>had been working</b> at that company for three years when it went bankrupt."</code>
+                </div>
+            </div>
+
+            <div class="formula-card" style="border-top: 4px solid var(--warning);">
+                <span class="badge" style="background: #fff8e1; color: #f39c12;">2. Cause of a Result in the Past</span>
+                <h4 style="margin: 10px 0 5px 0; font-size: 1rem;">دلیل یک اتفاق در گذشته (با اثر فیزیکی)</h4>
+                <p style="font-size: 0.85rem; color: #636e72; margin-bottom: 15px;">To explain the visible cause of a past situation. (Similar to Present Perfect Cont. but shifted back).</p>
+                <div style="background: #f8f9fa; padding: 10px; border-radius: 8px;">
+                    <code style="color: var(--warning); font-size: 0.85rem;">"Jason was tired because he <b>had been jogging</b>."</code><br>
+                    <code style="color: var(--warning); font-size: 0.85rem;">"The roads were wet; it <b>had been raining</b>."</code>
+                </div>
+            </div>
+
+            <div class="formula-card" style="border-top: 4px solid var(--blue);">
+                <span class="badge" style="background: #e1f5fe; color: #2980b9;">3. Repeated Actions Before the Past</span>
+                <h4 style="margin: 10px 0 5px 0; font-size: 1rem;">کارهای تکرارشونده در گذشته‌ی دور</h4>
+                <p style="font-size: 0.85rem; color: #636e72; margin-bottom: 15px;">To emphasize that an action was repeated many times before a certain point.</p>
+                <div style="background: #f8f9fa; padding: 10px; border-radius: 8px;">
+                    <code style="color: var(--blue); font-size: 0.85rem;">"He <b>had been trying</b> to pass the exam for months before he finally succeeded."</code>
+                </div>
+            </div>
+
+            <div class="formula-card" style="border-top: 4px solid var(--danger);">
+                <span class="badge" style="background: #fdedec; color: #c0392b;">4. Reported Speech</span>
+                <h4 style="margin: 10px 0 5px 0; font-size: 1rem;">نقل قول غیرمستقیم زمان‌های استمراری</h4>
+                <p style="font-size: 0.85rem; color: #636e72; margin-bottom: 15px;">When someone originally used Present Perfect Continuous or Past Continuous.</p>
+                <div style="background: #f8f9fa; padding: 10px; border-radius: 8px;">
+                    <code style="color: var(--danger); font-size: 0.85rem;">Direct: "I <b>have been waiting</b>."</code><br>
+                    <code style="color: var(--danger); font-size: 0.85rem;">Reported: "She said she <b>had been waiting</b>."</code>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title"><span>🎯</span> IELTS Strategic Application</div>
+        <div class="ielts-strategy">
+            
+            <div class="strategy-item" style="border-bottom: 1px dashed #c8e6c9; padding-bottom: 20px;">
+                <span class="badge" style="background: #27ae60; color: white;">Speaking Part 2</span>
+                <b style="margin-top: 8px;">Setting a Deep Background Scene</b>
+                <p style="margin: 8px 0;">This is the ultimate storytelling tool. When describing an event, explain what you had been doing for a long time <i>right up until</i> the event happened. It shows incredible grammatical range to the examiner.</p>
+                <div style="background: rgba(255,255,255,0.7); padding: 12px; border-radius: 8px; border-left: 4px solid var(--accent);">
+                    <i>Band 8 Example:</i> "I was absolutely exhausted that day because I <b style="color: var(--primary); display: inline;">had been studying</b> for my finals non-stop all week. Then, suddenly..."
+                </div>
+            </div>
+
+            <div class="strategy-item" style="border-bottom: 1px dashed #c8e6c9; padding-bottom: 20px; margin-top: 20px;">
+                <span class="badge" style="background: #2980b9; color: white;">Writing Task 2</span>
+                <b style="margin-top: 8px;">Explaining Historical Causes of Problems</b>
+                <p style="margin: 8px 0;">Use it in body paragraphs to trace the root of a past problem. It shows you understand the duration of historical issues.</p>
+                <div style="background: rgba(255,255,255,0.7); padding: 12px; border-radius: 8px; border-left: 4px solid var(--blue);">
+                    <i>Band 8 Example:</i> "Before the new environmental laws were introduced, factories <b style="color: var(--primary); display: inline;">had been polluting</b> the rivers for decades without consequence."
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section" style="border-bottom: none;">
+        <div class="section-title"><span>🚫</span> Common Band 6 Pitfalls</div>
+        <div class="error-box">
+            <p style="margin-top: 0; font-weight: bold;">Avoid these mistakes to secure a Band 7+ in Grammatical Range and Accuracy (GRA):</p>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li style="margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid rgba(231, 76, 60, 0.2);">
+                    <b style="color: #c0392b;">1. Confusing it with Past Continuous:</b> Past Continuous focuses on the action being interrupted in the middle. Past Perfect Continuous emphasizes *how long* it was happening before the interruption.
+                    <br><span style="color: #e74c3c;">❌ <i>I <b>was waiting</b> for two hours when he arrived.</i> (Grammatically clumsy)</span>
+                    <br><span style="color: #27ae60;">✅ <i>I <b>had been waiting</b> for two hours when he arrived.</i></span>
+                </li>
+                <li style="margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid rgba(231, 76, 60, 0.2);">
+                    <b style="color: #c0392b;">2. The Stative Verb Trap (Never goes away!):</b> You cannot use verbs of state (know, own, belong, like) in this tense. 
+                    <br><span style="color: #e74c3c;">❌ <i>They <b>had been owning</b> the house for ten years before they sold it.</i></span>
+                    <br><span style="color: #27ae60;">✅ <i>They <b>had owned</b> the house for ten years before they sold it.</i> (Use Past Perfect Simple)</span>
+                </li>
+                <li>
+                    <b style="color: #c0392b;">3. Dropping the "had":</b> It's easy to accidentally slip into Present Perfect Continuous if you forget your story is entirely in the past.
+                    <br><span style="color: #e74c3c;">❌ <i>He was tired because he <b>has been working</b> all night.</i> ("was" is past, "has" is present - timeline mismatch!)</span>
+                    <br><span style="color: #27ae60;">✅ <i>He was tired because he <b>had been working</b> all night.</i></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
