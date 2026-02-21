@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Past: Finished Actions & Historical Data (IELTS 8.0)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2980b9;
+            --accent: #27ae60;
+            --warning: #f39c12;
+            --danger: #e74c3c;
+            --bg: #f5f6fa;
+            --text: #2f3640;
+        }
+
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 40px; }
+        .master-container { max-width: 1000px; margin: 0 auto; background: white; border-radius: 30px; box-shadow: 0 25px 50px rgba(0,0,0,0.1); overflow: hidden; }
+
+        /* Header */
+        .header { background: linear-gradient(135deg, var(--primary), #341f97); padding: 50px; color: white; text-align: center; }
+        .header h1 { margin: 0; font-size: 3rem; font-weight: 900; letter-spacing: -1px; }
+        .header p { opacity: 0.9; font-size: 1.2rem; margin-top: 10px; }
+
+        /* Timeline Section */
+        .section { padding: 40px; border-bottom: 1px solid #eee; }
+        .section-title { font-size: 1.2rem; font-weight: 800; text-transform: uppercase; color: #7f8c8d; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+        
+        .timeline-graphic { background: #f9f9f9; padding: 40px; border-radius: 20px; position: relative; text-align: center; }
+        .line { height: 4px; background: #dcdde1; width: 100%; position: relative; display: flex; justify-content: space-between; align-items: center; }
+        .now-marker { width: 20px; height: 20px; background: #b2bec3; border-radius: 50%; border: 4px solid white; box-shadow: 0 0 10px rgba(0,0,0,0.2); position: absolute; left: 75%; transform: translateX(-50%); z-index: 2; }
+        .past-marker { width: 20px; height: 20px; background: var(--danger); border-radius: 50%; border: 4px solid white; box-shadow: 0 0 10px rgba(0,0,0,0.2); position: absolute; left: 25%; transform: translateX(-50%); z-index: 2; }
+        .infinite-line { position: absolute; width: 0; height: 0; } /* بدون خط استمرار */
+
+        /* Structures */
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
+        .formula-card { background: #fff; border: 2px solid #f1f2f6; border-radius: 20px; padding: 25px; transition: 0.3s; }
+        .formula-card:hover { border-color: var(--primary); }
+        .code { font-family: 'JetBrains Mono', monospace; display: block; background: #2f3542; color: #fff; padding: 15px; border-radius: 12px; margin: 10px 0; font-size: 0.85rem; line-height: 1.4; }
+        
+        /* New Styles for added content */
+        .form-label { font-size: 0.8rem; font-weight: bold; color: #7f8c8d; text-transform: uppercase; display: inline-block; width: 30px; }
+        .code-neg { background: #c0392b; }
+        .code-que { background: #e67e22; }
+
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.9rem; }
+        th { text-align: left; padding: 10px; border-bottom: 2px solid var(--primary); color: var(--primary); }
+        td { padding: 10px; border-bottom: 1px solid #f1f2f6; }
+
+        /* IELTS Specifics */
+        .ielts-strategy { background: #f0fff4; border-left: 8px solid var(--accent); padding: 30px; border-radius: 0 20px 20px 0; }
+        .strategy-item { margin-bottom: 15px; }
+        .strategy-item b { color: var(--accent); display: block; font-size: 1.1rem; }
+
+        /* Error Warnings */
+        .error-box { background: #fff5f5; border: 2px dashed var(--danger); padding: 20px; border-radius: 20px; color: var(--danger); }
+        
+        .badge { padding: 5px 15px; border-radius: 50px; font-size: 0.8rem; font-weight: bold; background: #eee; }
+    </style>
+</head>
+<body>
+
+<div class="master-container">
+    <div class="header">
+        <h1>Simple Past</h1>
+        <p>Mastery of Finished Events, Historical Data, and Narratives</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title"><span>⏳</span> Timeline & Concept</div>
+        <div class="timeline-graphic">
+            <div class="past-marker"></div>
+            <div class="now-marker"></div>
+            <div class="line">
+                <span>Past</span>
+                <span style="color: var(--danger); font-weight: 800; position: absolute; left: 25%; transform: translateX(-50%); top: 25px;">Finished Action</span>
+                <span style="color: #7f8c8d; font-weight: 800; position: absolute; left: 75%; transform: translateX(-50%); top: 25px;">NOW</span>
+                <span>Future</span>
+            </div>
+            <p style="margin-top: 50px; font-weight: 600; color: var(--primary);">"It started in the past, and it ended in the past. 100% disconnected from NOW."</p>
+        </div>
+        
+    </div>
+
+    <div class="section">
+        <div class="section-title"><span>⚙️</span> Morphosyntactic Structure</div>
+        <div class="grid">
+            <div class="formula-card">
+                <span class="badge" style="background: #e1f5fe; color: #0288d1;">ACTIVE VOICE</span>
+                <div style="margin-top: 15px;">
+                    <span class="form-label">(+)</span>
+                    <code class="code">Subject + Past Verb (V2)</code>
+                    <p style="font-size: 0.85rem; margin-top: 5px;"><i>"Sales <b>plummeted</b> in 2008."</i></p>
+                    
+                    <span class="form-label">(-)</span>
+                    <code class="code code-neg">Subject + did not + Base Verb</code>
+                    <p style="font-size: 0.85rem; margin-top: 5px;"><i>"The company <b>did not recover</b> quickly."</i></p>
+                    
+                    <span class="form-label">(?)</span>
+                    <code class="code code-que">Did + Subject + Base Verb?</code>
+                    <p style="font-size: 0.85rem; margin-top: 5px;"><i>"<b>Did</b> the policy <b>change</b> consumer behavior?"</i></p>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <span class="badge" style="background: #e8f5e9; color: #2e7d32;">PASSIVE VOICE (Band 8+)</span>
+                <div style="margin-top: 15px;">
+                    <span class="form-label">(+)</span>
+                    <code class="code">Subject + was/were + Past Participle</code>
+                    <p style="font-size: 0.85rem; margin-top: 5px;"><i>"The new law <b>was introduced</b> in 1999."</i></p>
+
+                    <span class="form-label">(-)</span>
+                    <code class="code code-neg">Subject + was/were not + Past Participle</code>
+                    <p style="font-size: 0.85rem; margin-top: 5px;"><i>"The targets <b>were not met</b> that year."</i></p>
+
+                    <span class="form-label">(?)</span>
+                    <code class="code code-que">Was/Were + Subject + Past Participle?</code>
+                    <p style="font-size: 0.85rem; margin-top: 5px;"><i>"<b>Was</b> the budget <b>approved</b> by the board?"</i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title"><span>📝</span> Spelling & Advanced Mechanics</div>
+        <div class="grid">
+            <div class="formula-card">
+                <span class="badge">Regular Verbs (+ed) Rules</span>
+                <table>
+                    <tr><th>Ending</th><th>Rule</th><th>Example</th></tr>
+                    <tr><td>Most verbs</td><td>+ ed</td><td>Work → Worked</td></tr>
+                    <tr><td>Ends in 'e'</td><td>+ d</td><td>Live → Lived</td></tr>
+                    <tr><td>Consonant + y</td><td>-y + ied</td><td>Study → Studied</td></tr>
+                    <tr><td>C-V-C (1 syllable)</td><td>Double last letter + ed</td><td>Stop → Stopped</td></tr>
+                </table>
+            </div>
+
+            <div class="formula-card">
+                <span class="badge">Academic Time Markers (Band 8)</span>
+                <div style="margin-top: 15px;">
+                    <b>High-scoring time expressions:</b>
+                    <code class="code" style="background: #f1f2f6; color: #2f3640;">A decade ago | During the 1990s | Formerly | Initially</code>
+                    <p style="font-size: 0.85rem;">* Use these instead of "in the past" or "before" to show lexical variety in Task 1.</p>
+                    
+                    <b style="display: block; margin-top: 15px;">Irregular Verbs Alert:</b>
+                    <p style="font-size: 0.85rem;">Many academic verbs are irregular and don't take 'ed'. You must memorize them.</p>
+                    <code class="code" style="background: #f1f2f6; color: #2f3640;">Fall → <b>Fell</b> | Rise → <b>Rose</b> | Undergo → <b>Underwent</b></code>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title"><span>🛠️</span> Core Use Cases (When to use it)</div>
+        
+        <div class="grid">
+            <div class="formula-card" style="border-top: 4px solid var(--primary);">
+                <span class="badge" style="background: #e1f5fe; color: #0288d1;">1. Finished Actions</span>
+                <h4 style="margin: 10px 0 5px 0; font-size: 1rem;">کارهای تمام شده در زمان مشخص</h4>
+                <p style="font-size: 0.85rem; color: #636e72; margin-bottom: 15px;">Actions that started and finished at a specific, stated time in the past.</p>
+                <div style="background: #f8f9fa; padding: 10px; border-radius: 8px;">
+                    <code style="color: var(--primary); font-size: 0.85rem;">"The company <b>launched</b> its product in 2015."</code><br>
+                    <code style="color: var(--primary); font-size: 0.85rem;">"I <b>graduated</b> from university three years ago."</code>
+                </div>
+            </div>
+
+            <div class="formula-card" style="border-top: 4px solid var(--accent);">
+                <span class="badge" style="background: #e8f5e9; color: #2e7d32;">2. Series of Completed Actions</span>
+                <h4 style="margin: 10px 0 5px 0; font-size: 1rem;">روایت داستان و اتفاقات متوالی</h4>
+                <p style="font-size: 0.85rem; color: #636e72; margin-bottom: 15px;">To list actions that happened one after another in a chronological story.</p>
+                <div style="background: #f8f9fa; padding: 10px; border-radius: 8px;">
+                    <code style="color: var(--accent); font-size: 0.85rem;">"He <b>arrived</b>, <b>checked</b> into the hotel, and <b>slept</b>."</code><br>
+                    <code style="color: var(--accent); font-size: 0.85rem;">"First, the temperature <b>dropped</b>, then the machine <b>stopped</b>."</code>
+                </div>
+            </div>
+
+            <div class="formula-card" style="border-top: 4px solid var(--warning);">
+                <span class="badge" style="background: #fff8e1; color: #f39c12;">3. Past Habits & States</span>
+                <h4 style="margin: 10px 0 5px 0; font-size: 1rem;">عادت‌ها یا شرایط در گذشته (که الان نیست)</h4>
+                <p style="font-size: 0.85rem; color: #636e72; margin-bottom: 15px;">Actions or facts that were true in the past but are not true anymore.</p>
+                <div style="background: #f8f9fa; padding: 10px; border-radius: 8px;">
+                    <code style="color: var(--warning); font-size: 0.85rem;">"She <b>played</b> the piano when she was a child."</code><br>
+                    <code style="color: var(--warning); font-size: 0.85rem;">"People <b>wrote</b> letters before the internet."</code>
+                </div>
+            </div>
+
+            <div class="formula-card" style="border-top: 4px solid #8e44ad;">
+                <span class="badge" style="background: #f3e5f5; color: #8e44ad;">4. Hypothetical Situations</span>
+                <h4 style="margin: 10px 0 5px 0; font-size: 1rem;">شرایط فرضی و غیرواقعی (شرطی نوع دوم)</h4>
+                <p style="font-size: 0.85rem; color: #636e72; margin-bottom: 15px;">Used after 'if' or 'wish' to talk about imagined situations in the present or future.</p>
+                <div style="background: #f8f9fa; padding: 10px; border-radius: 8px;">
+                    <code style="color: #8e44ad; font-size: 0.85rem;">"If I <b>had</b> a million dollars, I would invest it."</code><br>
+                    <code style="color: #8e44ad; font-size: 0.85rem;">"I wish I <b>knew</b> the answer."</code>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title"><span>🎯</span> IELTS Strategic Application</div>
+        <div class="ielts-strategy">
+            
+            <div class="strategy-item" style="border-bottom: 1px dashed #c8e6c9; padding-bottom: 20px;">
+                <span class="badge" style="background: #27ae60; color: white;">Writing Task 1</span>
+                <b style="margin-top: 8px;">Reporting Historical Data (Line/Bar/Pie Charts)</b>
+                <p style="margin: 8px 0;">If the chart's timeline is entirely in the past (e.g., 1990 to 2010), you <b>must</b> use Simple Past to describe the trends. Mix active and passive structures for Band 8.</p>
+                
+                <div style="background: rgba(255,255,255,0.7); padding: 12px; border-radius: 8px; border-left: 4px solid var(--accent);">
+                    <i>Band 8 Example:</i> "In 2005, the proportion of renewable energy <b style="color: var(--primary); display: inline;">surged</b> <i>(Active)</i>, while fossil fuels <b style="color: var(--accent); display: inline;">were gradually phased out</b> <i>(Passive)</i>."
+                </div>
+            </div>
+
+            <div class="strategy-item" style="border-bottom: 1px dashed #c8e6c9; padding-bottom: 20px; margin-top: 20px;">
+                <span class="badge" style="background: #2980b9; color: white;">Speaking Part 2</span>
+                <b style="margin-top: 8px;">Storytelling & Describing Experiences</b>
+                <p style="margin: 8px 0;">When asked to "Describe a time when...", your primary tool is the Simple Past. A common mistake is accidentally switching back to Present tense mid-story.</p>
+                <div style="background: rgba(255,255,255,0.7); padding: 12px; border-radius: 8px; border-left: 4px solid var(--primary);">
+                    <i>Band 8 Example:</i> "When I initially <b style="color: var(--primary); display: inline;">arrived</b> in the city, I <b style="color: var(--primary); display: inline;">found</b> it quite overwhelming."
+                </div>
+            </div>
+
+            <div class="strategy-item" style="margin-top: 20px;">
+                <span class="badge" style="background: #8e44ad; color: white;">Grammatical Range</span>
+                <b style="margin-top: 8px;">Second Conditional (Hypothetical Solutions)</b>
+                <p style="margin: 8px 0;">In Task 2, use this to present a hypothetical solution and its result. This demonstrates advanced grammatical flexibility (GRA).</p>
+                <code class="code" style="background: #f1f2f6; color: #2f3640; display: inline-block; padding: 5px 10px; margin-bottom: 8px;">If + Simple Past, Subject + would + Base Verb</code>
+                <div style="background: rgba(255,255,255,0.7); padding: 12px; border-radius: 8px; border-left: 4px solid #8e44ad;">
+                    <i>Band 8 Example:</i> "If governments <b style="color: #8e44ad; display: inline;">allocated</b> more funding to education, poverty rates <b style="color: #8e44ad; display: inline;">would decrease</b>."
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section" style="border-bottom: none;">
+        <div class="section-title"><span>🚫</span> Common Band 6 Pitfalls</div>
+        <div class="error-box">
+            <p style="margin-top: 0; font-weight: bold;">Avoid these mistakes to secure a Band 7+ in Grammatical Range and Accuracy (GRA):</p>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li style="margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid rgba(231, 76, 60, 0.2);">
+                    <b style="color: #c0392b;">1. The Double Past Error (Negative/Question):</b> Putting the main verb in the past tense when 'did' is already doing that job.
+                    <br><span style="color: #e74c3c;">❌ <i>The figures <b>did not rose</b> in 2010.</i></span>
+                    <br><span style="color: #27ae60;">✅ <i>The figures <b>did not rise</b> in 2010.</i></span>
+                </li>
+                <li style="margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid rgba(231, 76, 60, 0.2);">
+                    <b style="color: #c0392b;">2. Missing "was/were" in Passive Voice:</b> Especially common in Task 1 when describing things that were built or created.
+                    <br><span style="color: #e74c3c;">❌ <i>The new library <b>built</b> in 1995.</i> (This means the library physically built something itself!)</span>
+                    <br><span style="color: #27ae60;">✅ <i>The new library <b>was built</b> in 1995.</i></span>
+                </li>
+                <li>
+                    <b style="color: #c0392b;">3. Present Perfect vs. Simple Past Confusion:</b> Using Present Perfect (has/have + V3) when a specific past time is mentioned.
+                    <br><span style="color: #e74c3c;">❌ <i>The economy <b>has recovered</b> last year.</i></span>
+                    <br><span style="color: #27ae60;">✅ <i>The economy <b>recovered</b> last year.</i></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

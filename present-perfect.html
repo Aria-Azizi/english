@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Present Perfect: The Bridge Between Past & Present (IELTS 8.0)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2980b9;
+            --accent: #27ae60;
+            --warning: #f39c12;
+            --danger: #e74c3c;
+            --bg: #f5f6fa;
+            --text: #2f3640;
+        }
+
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 40px; }
+        .master-container { max-width: 1000px; margin: 0 auto; background: white; border-radius: 30px; box-shadow: 0 25px 50px rgba(0,0,0,0.1); overflow: hidden; }
+
+        /* Header */
+        .header { background: linear-gradient(135deg, var(--primary), #341f97); padding: 50px; color: white; text-align: center; }
+        .header h1 { margin: 0; font-size: 3rem; font-weight: 900; letter-spacing: -1px; }
+        .header p { opacity: 0.9; font-size: 1.2rem; margin-top: 10px; }
+
+        /* Timeline Section */
+        .section { padding: 40px; border-bottom: 1px solid #eee; }
+        .section-title { font-size: 1.2rem; font-weight: 800; text-transform: uppercase; color: #7f8c8d; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+        
+        .timeline-graphic { background: #f9f9f9; padding: 40px; border-radius: 20px; position: relative; text-align: center; }
+        .line { height: 4px; background: #dcdde1; width: 100%; position: relative; display: flex; justify-content: space-between; align-items: center; }
+        .now-marker { width: 24px; height: 24px; background: var(--danger); border-radius: 50%; border: 4px solid white; box-shadow: 0 0 10px rgba(0,0,0,0.2); position: absolute; left: 75%; transform: translateX(-50%); z-index: 2; }
+        .past-marker { width: 16px; height: 16px; background: var(--primary); border-radius: 50%; border: 4px solid white; box-shadow: 0 0 10px rgba(0,0,0,0.2); position: absolute; left: 25%; transform: translateX(-50%); z-index: 3; }
+        .infinite-line { position: absolute; width: 50%; height: 8px; background: linear-gradient(90deg, var(--primary), var(--danger)); border-radius: 4px; left: 25%; top: 38px; } /* اتصال گذشته به حال */
+
+        /* Structures */
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
+        .formula-card { background: #fff; border: 2px solid #f1f2f6; border-radius: 20px; padding: 25px; transition: 0.3s; }
+        .formula-card:hover { border-color: var(--primary); }
+        .code { font-family: 'JetBrains Mono', monospace; display: block; background: #2f3542; color: #fff; padding: 15px; border-radius: 12px; margin: 10px 0; font-size: 0.85rem; line-height: 1.4; }
+        
+        /* New Styles for added content */
+        .form-label { font-size: 0.8rem; font-weight: bold; color: #7f8c8d; text-transform: uppercase; display: inline-block; width: 30px; }
+        .code-neg { background: #c0392b; }
+        .code-que { background: #e67e22; }
+
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.9rem; }
+        th { text-align: left; padding: 10px; border-bottom: 2px solid var(--primary); color: var(--primary); }
+        td { padding: 10px; border-bottom: 1px solid #f1f2f6; }
+
+        /* IELTS Specifics */
+        .ielts-strategy { background: #f0fff4; border-left: 8px solid var(--accent); padding: 30px; border-radius: 0 20px 20px 0; }
+        .strategy-item { margin-bottom: 15px; }
+        .strategy-item b { color: var(--accent); display: block; font-size: 1.1rem; }
+
+        /* Error Warnings */
+        .error-box { background: #fff5f5; border: 2px dashed var(--danger); padding: 20px; border-radius: 20px; color: var(--danger); }
+        
+        .badge { padding: 5px 15px; border-radius: 50px; font-size: 0.8rem; font-weight: bold; background: #eee; }
+    </style>
+</head>
+<body>
+
+<div class="master-container">
+    <div class="header">
+        <h1>Present Perfect</h1>
+        <p>The Ultimate Bridge: Connecting Past Actions to Present Results</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title"><span>⏳</span> Timeline & Concept</div>
+        <div class="timeline-graphic">
+            <div class="infinite-line"></div>
+            <div class="past-marker"></div>
+            <div class="now-marker"></div>
+            <div class="line">
+                <span>Past</span>
+                <span style="color: var(--primary); font-weight: 800; position: absolute; left: 25%; transform: translateX(-50%); top: 30px;">Action Happened</span>
+                <span style="color: var(--danger); font-weight: 800; position: absolute; left: 75%; transform: translateX(-50%); top: 30px;">Result NOW</span>
+                <span>Future</span>
+            </div>
+            <p style="margin-top: 60px; font-weight: 600; color: var(--primary);">"The action is in the past, but the EFFECT is happening right now."</p>
+        </div>
+        
+    </div>
+
+    <div class="section">
+        <div class="section-title"><span>⚙️</span> Morphosyntactic Structure</div>
+        <div class="grid">
+            <div class="formula-card">
+                <span class="badge" style="background: #e1f5fe; color: #0288d1;">ACTIVE VOICE</span>
+                <div style="margin-top: 15px;">
+                    <span class="form-label">(+)</span>
+                    <code class="code">Subject + has/have + Past Participle</code>
+                    <p style="font-size: 0.85rem; margin-top: 5px;"><i>"Technology <b>has transformed</b> modern education."</i></p>
+                    
+                    <span class="form-label">(-)</span>
+                    <code class="code code-neg">Subject + has/have not + Past Participle</code>
+                    <p style="font-size: 0.85rem; margin-top: 5px;"><i>"The government <b>has not solved</b> the crisis yet."</i></p>
+                    
+                    <span class="form-label">(?)</span>
+                    <code class="code code-que">Has/Have + Subject + Past Participle?</code>
+                    <p style="font-size: 0.85rem; margin-top: 5px;"><i>"<b>Have</b> researchers <b>discovered</b> a viable alternative?"</i></p>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <span class="badge" style="background: #e8f5e9; color: #2e7d32;">PASSIVE VOICE (Band 8+)</span>
+                <div style="margin-top: 15px;">
+                    <span class="form-label">(+)</span>
+                    <code class="code">Subject + has/have + been + Past Participle</code>
+                    <p style="font-size: 0.85rem; margin-top: 5px;"><i>"Substantial progress <b>has been made</b>."</i></p>
+
+                    <span class="form-label">(-)</span>
+                    <code class="code code-neg">Subject + has/have not + been + Past Participle</code>
+                    <p style="font-size: 0.85rem; margin-top: 5px;"><i>"The root causes <b>have not been addressed</b>."</i></p>
+
+                    <span class="form-label">(?)</span>
+                    <code class="code code-que">Has/Have + Subject + been + Past Participle?</code>
+                    <p style="font-size: 0.85rem; margin-top: 5px;"><i>"<b>Has</b> the new policy <b>been implemented</b> globally?"</i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title"><span>📝</span> Spelling & Advanced Mechanics</div>
+        <div class="grid">
+            <div class="formula-card">
+                <span class="badge">Since vs. For (Crucial Difference)</span>
+                <div style="margin-top: 15px;">
+                    <b>SINCE + Starting Point:</b>
+                    <p style="font-size: 0.85rem; margin-top: 5px;">Used with a specific point in time (2010, Monday, I was a child).</p>
+                    <code class="code" style="background: #f1f2f6; color: #2f3640;">"The rate has increased <b>since 2015</b>."</code>
+                    
+                    <b style="display: block; margin-top: 15px;">FOR + Duration of Time:</b>
+                    <p style="font-size: 0.85rem; margin-top: 5px;">Used with a period/length of time (3 years, a long time, centuries).</p>
+                    <code class="code" style="background: #f1f2f6; color: #2f3640;">"They have lived here <b>for a decade</b>."</code>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <span class="badge">Band 8 Academic Time Markers</span>
+                <div style="margin-top: 15px;">
+                    <b>High-scoring phrases for Task 1 & 2:</b>
+                    <code class="code" style="background: #f1f2f6; color: #2f3640;">Over the past few decades | In recent years | So far | Already | Yet</code>
+                    <p style="font-size: 0.85rem;">* <i>"Over the past decade"</i> is much more academic than <i>"In the last 10 years"</i>.</p>
+                    
+                    <b style="display: block; margin-top: 15px;">Position of "Already" and "Yet":</b>
+                    <p style="font-size: 0.85rem;"><i>Already</i> goes before the Past Participle. <i>Yet</i> goes at the very end (negative/questions).</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title"><span>🛠️</span> Core Use Cases (When to use it)</div>
+        
+        <div class="grid">
+            <div class="formula-card" style="border-top: 4px solid var(--primary);">
+                <span class="badge" style="background: #e1f5fe; color: #0288d1;">1. Past Action, Present Result</span>
+                <h4 style="margin: 10px 0 5px 0; font-size: 1rem;">اتفاق در گذشته، اثر در زمان حال</h4>
+                <p style="font-size: 0.85rem; color: #636e72; margin-bottom: 15px;">The exact time it happened is not important; the result NOW is what matters.</p>
+                <div style="background: #f8f9fa; padding: 10px; border-radius: 8px;">
+                    <code style="color: var(--primary); font-size: 0.85rem;">"I <b>have lost</b> my keys." (Result: I can't open the door now)</code><br>
+                    <code style="color: var(--primary); font-size: 0.85rem;">"He <b>has broken</b> his leg." (Result: He is in a cast now)</code>
+                </div>
+            </div>
+
+            <div class="formula-card" style="border-top: 4px solid var(--accent);">
+                <span class="badge" style="background: #e8f5e9; color: #2e7d32;">2. Life Experiences</span>
+                <h4 style="margin: 10px 0 5px 0; font-size: 1rem;">تجربیات زندگی (از تولد تا الان)</h4>
+                <p style="font-size: 0.85rem; color: #636e72; margin-bottom: 15px;">Used with 'ever' and 'never' to talk about experiences without saying exactly *when*.</p>
+                <div style="background: #f8f9fa; padding: 10px; border-radius: 8px;">
+                    <code style="color: var(--accent); font-size: 0.85rem;">"I <b>have never eaten</b> sushi."</code><br>
+                    <code style="color: var(--accent); font-size: 0.85rem;">"<b>Have</b> you <b>ever visited</b> Japan?"</code>
+                </div>
+            </div>
+
+            <div class="formula-card" style="border-top: 4px solid var(--warning);">
+                <span class="badge" style="background: #fff8e1; color: #f39c12;">3. Recent News & Updates</span>
+                <h4 style="margin: 10px 0 5px 0; font-size: 1rem;">اخبار و رویدادهای اخیراً رخ داده</h4>
+                <p style="font-size: 0.85rem; color: #636e72; margin-bottom: 15px;">Used to announce new information or recent events (often with 'just', 'recently', 'lately').</p>
+                <div style="background: #f8f9fa; padding: 10px; border-radius: 8px;">
+                    <code style="color: var(--warning); font-size: 0.85rem;">"The CEO <b>has just resigned</b>."</code><br>
+                    <code style="color: var(--warning); font-size: 0.85rem;">"Scientists <b>have recently found</b> water on Mars."</code>
+                </div>
+            </div>
+
+            <div class="formula-card" style="border-top: 4px solid #8e44ad;">
+                <span class="badge" style="background: #f3e5f5; color: #8e44ad;">4. Unfinished Time / States</span>
+                <h4 style="margin: 10px 0 5px 0; font-size: 1rem;">کارهای شروع شده در گذشته که هنوز ادامه‌اند</h4>
+                <p style="font-size: 0.85rem; color: #636e72; margin-bottom: 15px;">Used with stative verbs (be, know, have) and 'since/for' to show a state is still ongoing.</p>
+                <div style="background: #f8f9fa; padding: 10px; border-radius: 8px;">
+                    <code style="color: #8e44ad; font-size: 0.85rem;">"We <b>have known</b> each other for 10 years." (And we still do)</code><br>
+                    <code style="color: #8e44ad; font-size: 0.85rem;">"She <b>has been</b> a teacher since 2018."</code>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title"><span>🎯</span> IELTS Strategic Application</div>
+        <div class="ielts-strategy">
+            
+            <div class="strategy-item" style="border-bottom: 1px dashed #c8e6c9; padding-bottom: 20px;">
+                <span class="badge" style="background: #27ae60; color: white;">Writing Task 1</span>
+                <b style="margin-top: 8px;">Describing "Change to Present" (Crucial for Band 8)</b>
+                <p style="margin: 8px 0;">If a graph's timeline starts in the past (e.g., 2010) and ends at NOW or "Present", you <b>cannot</b> use Simple Past for the final connection. You must use Present Perfect to bridge the data to today.</p>
+                <div style="background: rgba(255,255,255,0.7); padding: 12px; border-radius: 8px; border-left: 4px solid var(--accent);">
+                    <i>Band 8 Example:</i> "Since 2010, the number of international students <b style="color: var(--primary); display: inline;">has skyrocketed</b> <i>(Active)</i>, and numerous new campuses <b style="color: var(--accent); display: inline;">have been constructed</b> <i>(Passive)</i>."
+                </div>
+            </div>
+
+            <div class="strategy-item" style="border-bottom: 1px dashed #c8e6c9; padding-bottom: 20px; margin-top: 20px;">
+                <span class="badge" style="background: #2980b9; color: white;">Writing Task 2</span>
+                <b style="margin-top: 8px;">Introductions (Hook & Background)</b>
+                <p style="margin: 8px 0;">The best way to start a Task 2 essay is by using Present Perfect to explain a problem that has recently developed and is currently affecting society.</p>
+                <div style="background: rgba(255,255,255,0.7); padding: 12px; border-radius: 8px; border-left: 4px solid var(--primary);">
+                    <i>Band 8 Example:</i> "In recent decades, global warming <b style="color: var(--primary); display: inline;">has become</b> one of the most pressing issues of our time."
+                </div>
+            </div>
+
+            <div class="strategy-item" style="margin-top: 20px;">
+                <span class="badge" style="background: #8e44ad; color: white;">Speaking Part 3</span>
+                <b style="margin-top: 8px;">Discussing Societal Developments</b>
+                <p style="margin: 8px 0;">When the examiner asks about how your country or society has changed, Present Perfect is the required tense to show the result of those changes.</p>
+                <div style="background: rgba(255,255,255,0.7); padding: 12px; border-radius: 8px; border-left: 4px solid #8e44ad;">
+                    <i>Band 8 Example:</i> "Our lifestyle <b style="color: #8e44ad; display: inline;">has changed</b> drastically. People <b style="color: #8e44ad; display: inline;">have become</b> much more reliant on smartphones than before."
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section" style="border-bottom: none;">
+        <div class="section-title"><span>🚫</span> Common Band 6 Pitfalls</div>
+        <div class="error-box">
+            <p style="margin-top: 0; font-weight: bold;">Avoid these mistakes to secure a Band 7+ in Grammatical Range and Accuracy (GRA):</p>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li style="margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid rgba(231, 76, 60, 0.2);">
+                    <b style="color: #c0392b;">1. The Fatal "Specific Time" Error:</b> NEVER use Present Perfect with finished time words (yesterday, in 2015, last year, when I was young). This is an immediate Band 6 grammar cap.
+                    <br><span style="color: #e74c3c;">❌ <i>I <b>have visited</b> Paris in 2019.</i></span>
+                    <br><span style="color: #27ae60;">✅ <i>I <b>visited</b> Paris in 2019.</i> OR <i>I <b>have visited</b> Paris.</i> (Time not specified)</span>
+                </li>
+                <li style="margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid rgba(231, 76, 60, 0.2);">
+                    <b style="color: #c0392b;">2. Missing "been" in the Passive Voice:</b> A classic mistake in Task 1 when describing things that someone else did.
+                    <br><span style="color: #e74c3c;">❌ <i>Many trees <b>have planted</b> in the park.</i> (Means the trees planted themselves!)</span>
+                    <br><span style="color: #27ae60;">✅ <i>Many trees <b>have been planted</b> in the park.</i></span>
+                </li>
+                <li>
+                    <b style="color: #c0392b;">3. "Been" vs. "Gone":</b> 'Been' means you went and came back (experience). 'Gone' means you went and are still there.
+                    <br><span style="color: #e74c3c;">❌ <i>He <b>has gone</b> to London.</i> (If he is sitting next to you right now)</span>
+                    <br><span style="color: #27ae60;">✅ <i>He <b>has been</b> to London.</i> (He visited it at some point in his life)</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

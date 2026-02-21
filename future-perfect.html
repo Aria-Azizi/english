@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Future Perfect: Deadlines and Completed Projections (IELTS 8.0)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0984e3; /* Bright Future Blue */
+            --accent: #00b894; /* Success/Completion Green */
+            --warning: #fdcb6e; /* Deadline Yellow/Orange */
+            --danger: #d63031;
+            --purple: #6c5ce7;
+            --bg: #f5f6fa;
+            --text: #2d3436;
+        }
+
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 40px; }
+        .master-container { max-width: 1000px; margin: 0 auto; background: white; border-radius: 30px; box-shadow: 0 25px 50px rgba(0,0,0,0.1); overflow: hidden; }
+
+        /* Header */
+        .header { background: linear-gradient(135deg, var(--primary), var(--accent)); padding: 50px; color: white; text-align: center; }
+        .header h1 { margin: 0; font-size: 3rem; font-weight: 900; letter-spacing: -1px; }
+        .header p { opacity: 0.9; font-size: 1.2rem; margin-top: 10px; }
+
+        /* Timeline Section */
+        .section { padding: 40px; border-bottom: 1px solid #eee; }
+        .section-title { font-size: 1.2rem; font-weight: 800; text-transform: uppercase; color: #636e72; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+        
+        .timeline-graphic { background: #f9f9f9; padding: 40px; border-radius: 20px; position: relative; text-align: center; }
+        .line { height: 4px; background: #dcdde1; width: 100%; position: relative; display: flex; justify-content: space-between; align-items: center; }
+        
+        /* Timeline Markers */
+        .now-marker { width: 16px; height: 16px; background: var(--danger); border-radius: 50%; border: 4px solid white; box-shadow: 0 0 10px rgba(0,0,0,0.2); position: absolute; left: 20%; transform: translateX(-50%); z-index: 2; }
+        .action-marker { width: 20px; height: 20px; background: var(--primary); border-radius: 50%; border: 4px solid white; box-shadow: 0 0 10px rgba(0,0,0,0.2); position: absolute; left: 55%; transform: translateX(-50%); z-index: 3; }
+        .deadline-marker { width: 24px; height: 24px; background: var(--warning); border-radius: 0; transform: translateX(-50%) rotate(45deg); border: 4px solid white; box-shadow: 0 0 10px rgba(0,0,0,0.2); position: absolute; left: 80%; z-index: 4; }
+        
+        /* Line connecting Action to Deadline */
+        .infinite-line { position: absolute; width: 35%; height: 8px; background: linear-gradient(90deg, rgba(9, 132, 227, 0.2), var(--primary)); border-radius: 4px; left: 20%; top: 38px; }
+
+        /* Structures */
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
+        .formula-card { background: #fff; border: 2px solid #f1f2f6; border-radius: 20px; padding: 25px; transition: 0.3s; }
+        .formula-card:hover { border-color: var(--primary); }
+        .code { font-family: 'JetBrains Mono', monospace; display: block; background: #2d3436; color: #fff; padding: 15px; border-radius: 12px; margin: 10px 0; font-size: 0.85rem; line-height: 1.4; }
+        
+        /* New Styles for added content */
+        .form-label { font-size: 0.8rem; font-weight: bold; color: #636e72; text-transform: uppercase; display: inline-block; width: 30px; }
+        .code-neg { background: #c0392b; }
+        .code-que { background: #e67e22; }
+
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.9rem; }
+        th { text-align: left; padding: 10px; border-bottom: 2px solid var(--primary); color: var(--primary); }
+        td { padding: 10px; border-bottom: 1px solid #f1f2f6; }
+
+        /* IELTS Specifics */
+        .ielts-strategy { background: #f0fff4; border-left: 8px solid var(--accent); padding: 30px; border-radius: 0 20px 20px 0; }
+        .strategy-item { margin-bottom: 15px; }
+        .strategy-item b { color: var(--accent); display: block; font-size: 1.1rem; }
+
+        /* Error Warnings */
+        .error-box { background: #fff5f5; border: 2px dashed var(--danger); padding: 20px; border-radius: 20px; color: var(--danger); }
+        
+        .badge { padding: 5px 15px; border-radius: 50px; font-size: 0.8rem; font-weight: bold; background: #eee; }
+    </style>
+</head>
+<body>
+
+<div class="master-container">
+    <div class="header">
+        <h1>Future Perfect</h1>
+        <p>The "Completion by a Deadline" Tense</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title"><span>⏳</span> Timeline & Concept</div>
+        <div class="timeline-graphic">
+            <div class="infinite-line"></div>
+            <div class="now-marker"></div>
+            <div class="action-marker"></div>
+            <div class="deadline-marker" style="top: 36px;"></div>
+            <div class="line">
+                <span>Past</span>
+                <span style="color: var(--danger); font-weight: 800; position: absolute; left: 20%; transform: translateX(-50%); top: 30px;">NOW</span>
+                <span style="color: var(--primary); font-weight: 800; position: absolute; left: 55%; transform: translateX(-50%); top: 30px;">Action Finished</span>
+                <span style="color: var(--warning); font-weight: 800; position: absolute; left: 80%; transform: translateX(-50%); top: 45px;">Future Deadline</span>
+                <span>Future</span>
+            </div>
+            <p style="margin-top: 70px; font-weight: 600; color: var(--primary);">"Looking back from a point in the future to see what is already completed."</p>
+        </div>
+        
+    </div>
+
+    <div class="section">
+        <div class="section-title"><span>⚙️</span> Morphosyntactic Structure</div>
+        <div class="grid">
+            <div class="formula-card">
+                <span class="badge" style="background: #e1f5fe; color: #0984e3;">ACTIVE VOICE</span>
+                <div style="margin-top: 15px;">
+                    <span class="form-label">(+)</span>
+                    <code class="code">Subject + will have + Past Participle (V3)</code>
+                    <p style="font-size: 0.85rem; margin-top: 5px;"><i>"By 2050, scientists <b>will have discovered</b> new energy sources."</i></p>
+                    
+                    <span class="form-label">(-)</span>
+                    <code class="code code-neg">Subject + will not (won't) have + Past Participle</code>
+                    <p style="font-size: 0.85rem; margin-top: 5px;"><i>"They <b>won't have finished</b> the project by next month."</i></p>
+                    
+                    <span class="form-label">(?)</span>
+                    <code class="code code-que">Will + Subject + have + Past Participle?</code>
+                    <p style="font-size: 0.85rem; margin-top: 5px;"><i>"<b>Will</b> humanity <b>have colonized</b> Mars by the next century?"</i></p>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <span class="badge" style="background: #e8f5e9; color: #00b894;">PASSIVE VOICE (Band 8+ Goldmine)</span>
+                <div style="margin-top: 15px;">
+                    <span class="form-label">(+)</span>
+                    <code class="code">Subject + will have been + Past Participle</code>
+                    <p style="font-size: 0.85rem; margin-top: 5px;"><i>"By 2030, the new infrastructure <b>will have been completed</b>."</i></p>
+
+                    <span class="form-label">(-)</span>
+                    <code class="code code-neg">Subject + will not have been + Past Participle</code>
+                    <p style="font-size: 0.85rem; margin-top: 5px;"><i>"The targets <b>won't have been met</b> by the deadline."</i></p>
+
+                    <span class="form-label">(?)</span>
+                    <code class="code code-que">Will + Subject + have been + Past Participle?</code>
+                    <p style="font-size: 0.85rem; margin-top: 5px;"><i>"<b>Will</b> the funds <b>have been distributed</b> before the winter?"</i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title"><span>📝</span> Spelling & Advanced Mechanics</div>
+        <div class="grid">
+            <div class="formula-card">
+                <span class="badge">The Magic Word: "BY"</span>
+                <div style="margin-top: 15px;">
+                    <b>By = Not later than:</b>
+                    <p style="font-size: 0.85rem; margin-top: 5px;">Future Perfect almost ALWAYS requires the word <b>by</b> (or phrases like <i>by the time</i>, <i>before</i>) to set the deadline.</p>
+                    <code class="code" style="background: #f1f2f6; color: #2d3436;">By tomorrow | By next year | By the end of this decade</code>
+                    
+                    <b style="display: block; margin-top: 15px; color: #c0392b;">"In" vs "By":</b>
+                    <p style="font-size: 0.85rem;"><i>In 2050</i> -> Simple Future (It will happen during that year).<br><i>By 2050</i> -> Future Perfect (It will be finished before that year begins).</p>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <span class="badge">"By the time" + Present Simple</span>
+                <div style="margin-top: 15px;">
+                    <b>Advanced Time Clauses:</b>
+                    <p style="font-size: 0.85rem; margin-top: 5px;">When your deadline is an <i>action</i> instead of a date, you must use <b>Present Simple</b> for the deadline action.</p>
+                    <code class="code" style="background: #f1f2f6; color: #2d3436;">"By the time we <b>arrive</b> (Present Simple), the movie <b>will have started</b> (Future Perfect)."</code>
+                    <p style="font-size: 0.85rem; margin-top: 5px;"><i>* Never say: By the time we will arrive.</i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title"><span>🛠️</span> Core Use Cases (When to use it)</div>
+        
+        <div class="grid">
+            <div class="formula-card" style="border-top: 4px solid var(--primary);">
+                <span class="badge" style="background: #e1f5fe; color: #0984e3;">1. Completion Before a Future Deadline</span>
+                <h4 style="margin: 10px 0 5px 0; font-size: 1rem;">اتمام کار قبل از یک ضرب‌الاجل در آینده</h4>
+                <p style="font-size: 0.85rem; color: #636e72; margin-bottom: 15px;">The most common use. You focus on the fact that an action will be 100% finished before a specific time.</p>
+                <div style="background: #f8f9fa; padding: 10px; border-radius: 8px;">
+                    <code style="color: var(--primary); font-size: 0.85rem;">"I <b>will have finished</b> this report by Friday."</code><br>
+                    <code style="color: var(--primary); font-size: 0.85rem;">"By 8 PM, we <b>will have eaten</b> dinner."</code>
+                </div>
+            </div>
+
+            <div class="formula-card" style="border-top: 4px solid var(--accent);">
+                <span class="badge" style="background: #e8f5e9; color: #00b894;">2. Duration Up to a Future Time</span>
+                <h4 style="margin: 10px 0 5px 0; font-size: 1rem;">طول مدت یک کار تا یک زمان در آینده</h4>
+                <p style="font-size: 0.85rem; color: #636e72; margin-bottom: 15px;">Used with stative verbs (be, know, have) + for/since to show how long a state will have lasted.</p>
+                <div style="background: #f8f9fa; padding: 10px; border-radius: 8px;">
+                    <code style="color: var(--accent); font-size: 0.85rem;">"By next month, I <b>will have known</b> her for 5 years."</code><br>
+                    <code style="color: var(--accent); font-size: 0.85rem;">"Next year, they <b>will have been</b> married for a decade."</code>
+                </div>
+            </div>
+
+            <div class="formula-card" style="border-top: 4px solid var(--purple);">
+                <span class="badge" style="background: #f3e5f5; color: #6c5ce7;">3. Deductions & Assumptions (Advanced)</span>
+                <h4 style="margin: 10px 0 5px 0; font-size: 1rem;">گمانه‌زنی و فرض درباره زمان حال/گذشته</h4>
+                <p style="font-size: 0.85rem; color: #636e72; margin-bottom: 15px;">Used to express a strong assumption that something has *already* happened by now.</p>
+                <div style="background: #f8f9fa; padding: 10px; border-radius: 8px;">
+                    <code style="color: var(--purple); font-size: 0.85rem;">"Don't call him now. He <b>will have gone</b> to sleep." (I am sure he is asleep already)</code><br>
+                    <code style="color: var(--purple); font-size: 0.85rem;">"They <b>will have heard</b> the news by now."</code>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title"><span>🎯</span> IELTS Strategic Application</div>
+        <div class="ielts-strategy">
+            
+            <div class="strategy-item" style="border-bottom: 1px dashed #c8e6c9; padding-bottom: 20px;">
+                <span class="badge" style="background: #27ae60; color: white;">Writing Task 1</span>
+                <b style="margin-top: 8px;">Mastering Future Projections</b>
+                <p style="margin: 8px 0;">When a chart shows projections (e.g., population in 2040, 2050), using Future Perfect Passive to describe the ultimate endpoint is a guaranteed way to boost your Grammatical Range score.</p>
+                
+                <div style="background: rgba(255,255,255,0.7); padding: 12px; border-radius: 8px; border-left: 4px solid var(--accent);">
+                    <i>Band 8 Example:</i> "It is predicted that by 2050, the use of fossil fuels <b style="color: var(--primary); display: inline;">will have been almost entirely phased out</b> <i>(Passive)</i>, while renewable energy <b style="color: var(--accent); display: inline;">will have become</b> the dominant source."
+                </div>
+            </div>
+
+            <div class="strategy-item" style="border-bottom: 1px dashed #c8e6c9; padding-bottom: 20px; margin-top: 20px;">
+                <span class="badge" style="background: #0984e3; color: white;">Writing Task 2</span>
+                <b style="margin-top: 8px;">Concluding Paragraphs & Ultimate Outcomes</b>
+                <p style="margin: 8px 0;">In your conclusion or when discussing the long-term effects of a problem, use Future Perfect to project what the world will look like if action is (or isn't) taken.</p>
+                <div style="background: rgba(255,255,255,0.7); padding: 12px; border-radius: 8px; border-left: 4px solid var(--primary);">
+                    <i>Band 8 Example:</i> "If immediate action is not taken, irreversible damage <b style="color: var(--primary); display: inline;">will have been inflicted</b> upon the environment by the end of this century."
+                </div>
+            </div>
+
+            <div class="strategy-item" style="margin-top: 20px;">
+                <span class="badge" style="background: #6c5ce7; color: white;">Speaking Part 3</span>
+                <b style="margin-top: 8px;">Answering "How will things be different?"</b>
+                <p style="margin: 8px 0;">Showcase your fluency by looking ahead to a specific deadline and describing what society will have accomplished by then.</p>
+                <div style="background: rgba(255,255,255,0.7); padding: 12px; border-radius: 8px; border-left: 4px solid var(--purple);">
+                    <i>Band 8 Example:</i> "By the time the next generation grows up, I believe medicine <b style="color: var(--purple); display: inline;">will have advanced</b> so much that many of today's diseases <b style="color: var(--purple); display: inline;">will have been eradicated</b>."
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section" style="border-bottom: none;">
+        <div class="section-title"><span>🚫</span> Common Band 6 Pitfalls</div>
+        <div class="error-box">
+            <p style="margin-top: 0; font-weight: bold;">Avoid these mistakes to secure a Band 7+ in Grammatical Range and Accuracy (GRA):</p>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li style="margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid rgba(231, 76, 60, 0.2);">
+                    <b style="color: #c0392b;">1. The "Lonely Future Perfect" Error:</b> You CANNOT use Future Perfect without stating a clear deadline (using 'by' or 'before'). If there is no deadline, just use Simple Future.
+                    <br><span style="color: #e74c3c;">❌ <i>One day, humanity <b>will have lived</b> on Mars.</i> (No deadline!)</span>
+                    <br><span style="color: #27ae60;">✅ <i>One day, humanity <b>will live</b> on Mars.</i> (Simple Future)</span>
+                    <br><span style="color: #27ae60;">✅ <i><b>By 2080</b>, humanity <b>will have lived</b> on Mars for decades.</i> (Correct)</span>
+                </li>
+                <li style="margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid rgba(231, 76, 60, 0.2);">
+                    <b style="color: #c0392b;">2. Forgetting "been" in the Passive Form:</b> This is the most common mistake in Task 1 writing. When talking about things being built, replaced, or completed, it MUST be passive.
+                    <br><span style="color: #e74c3c;">❌ <i>By 2030, the new hospital <b>will have built</b>.</i> (The hospital built itself!)</span>
+                    <br><span style="color: #27ae60;">✅ <i>By 2030, the new hospital <b>will have been built</b>.</i></span>
+                </li>
+                <li>
+                    <b style="color: #c0392b;">3. Will inside a "By the time" clause:</b> Just like the First Conditional, you cannot use 'will' directly after time words.
+                    <br><span style="color: #e74c3c;">❌ <i>By the time he <b>will finish</b> his studies, he will have spent $50,000.</i></span>
+                    <br><span style="color: #27ae60;">✅ <i>By the time he <b>finishes</b> his studies, he will have spent $50,000.</i> (Present Simple + Future Perfect)</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
